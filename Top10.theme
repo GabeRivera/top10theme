@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the theme.
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function Top10_preprocess_html(&$variables) {
+  // Add sticky navbar class
+  $variables['attributes']['class'][] = 'navbar-fixed';
+}
+
+/**
+*
+* Process treatment for each paragraph
+*
+*/
+function Top10_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $properties = &drupal_static(__FUNCTION__);
+
+  // Retrieve parent component for each paragraph
+  if(isset($properties['current_twig']) && $properties['current_twig'] != $paragraph->bundle()) {
+      $variables['parent_twig'] = $properties['current_twig'];
+      $properties['parent_twig'] = $properties['current_twig'];
+  }
+  else {
+      $variables['parent_twig'] = $properties['parent_twig'];
+  }
+
+  $properties['current_twig'] = $paragraph->bundle();
+}
