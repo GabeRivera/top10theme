@@ -35,3 +35,11 @@ function Top10_preprocess_paragraph(&$variables) {
 
   $properties['current_twig'] = $paragraph->bundle();
 }
+
+function Top10_preprocess_node(&$variables){
+  $client = \Drupal::service('business_reviews_client');
+  $request = $client->getProductInfo(2);
+  $variables['average_rating'] = $request['rating']['avg'];
+  $variables['total_reviews'] = $request['numberOfReviews'];
+  
+}

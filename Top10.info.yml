@@ -13,8 +13,8 @@ libraries-override:
     css:
       theme:
         css/styles.css: false
-        
-  # Remove libraries, which will not be used in most cases 
+
+  # Remove libraries, which will not be used in most cases
   material_base/color-themes: false
   material_base/theme-dark: false
 
@@ -41,9 +41,3 @@ regions:
   after_main: 'After main content'
   content_secondary: 'Content secondary'
   footer_content: 'Footer content'
-
-# Information added by Drupal.org packaging script on 2018-12-12
-version: '8.x-1.6'
-core: '8.x'
-project: 'material_base'
-datestamp: 1544643497
