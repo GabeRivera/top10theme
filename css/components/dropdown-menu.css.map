@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/dropdown-menu.scss"],"names":[],"mappings":"AACI;EACI,WAAU;EACV,SAAQ,EACX","file":"../../sass/components/dropdown-menu.css","sourcesContent":[".menu-dropdown {\n    &-submenu {\n        left: 100%;\n        top: 10%;\n    }\n}"]}

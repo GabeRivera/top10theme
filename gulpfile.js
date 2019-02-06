@@ -54,7 +54,10 @@ gulp.task('imagemin', function() {
 
 // build without lint
 
-gulp.task('build', ['sass', 'imagemin']);
+gulp.task('build', function() {
+  gulp.start('sass');
+  gulp.start('imagemin');
+});
 
 gulp.task('watch', function () {
   watch(SASS + '/**/*.scss', batch(function (events, done) {
@@ -64,7 +67,13 @@ gulp.task('watch', function () {
 
 // build with lint
 
-gulp.task('build-lint', ['sass-lint', 'sass', 'imagemin', 'js-lint']);
+gulp.task('build-lint', function() {
+  gulp.start('sass-lint');
+  gulp.start('sass');
+  gulp.start('imagemin');
+  gulp.start('js-lint');
+});
+
 
 gulp.task('watch-lint', function () {
   watch(SASS + '/**/*.scss', batch(function (events, done) {
@@ -74,5 +83,8 @@ gulp.task('watch-lint', function () {
 
 // default task
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', function() {
+  gulp.start('build');
+  gulp.start('watch');
+});
 //gulp.task('default', ['build-lint', 'watch-lint']);

@@ -13,6 +13,8 @@ libraries-override:
     css:
       theme:
         css/styles.css: false
+    js:
+      js/misc.js: js/misc.js
 
   # Remove libraries, which will not be used in most cases
   material_base/color-themes: false
