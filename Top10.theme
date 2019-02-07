@@ -36,6 +36,14 @@ function Top10_preprocess_paragraph(&$variables) {
   $properties['current_twig'] = $paragraph->bundle();
 }
 
+
+/**
+*
+* Process treatment for each node
+* Makes API call to grab reviews info for each business
+* Checks agains $business_types array for business then runs api call
+*
+*/
 function Top10_preprocess_node(&$variables){
   $business_types = ['home_security'];
   $node_type = $variables['node']->getType();
