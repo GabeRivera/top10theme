@@ -1,15 +1,15 @@
-<div class="card card-vertical">
+<div class="card card-vertical business-profile">
   <div class="card-column-left card-column-120">
     <div class="card-item card-title">
-      <h3><a href="#">8.5</a></h3>
+      <span class="business-profile_rank">{{ content.field_business_rank }}</span>
+      <h3 class="business-profile_overall">{{ average_rating }}</h3>
+      <span class="rating">******</span>
+      <p>Overall Score</p>
     </div>
     <div class="card-item card-text">
-      <h3>{{ average_rating }}</h3>
-      <p>Overall Score</p>
-      <span class="rating">******</span>
     </div>
     <div class="card-item card-actions">
-      <a class="btn" href="{{ url }}">Action</a>
+      <a class="btn" href="{{ url }}">View</a>
     </div>
   </div>
   <div class="card-column-right card-column-stretch">
