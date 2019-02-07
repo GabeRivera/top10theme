@@ -37,9 +37,13 @@ function Top10_preprocess_paragraph(&$variables) {
 }
 
 function Top10_preprocess_node(&$variables){
-  $client = \Drupal::service('business_reviews_client');
-  $request = $client->getProductInfo(2);
-  $variables['average_rating'] = $request['rating']['avg'];
-  $variables['total_reviews'] = $request['numberOfReviews'];
-  
+  $business_types = ['home_security'];
+  $node_type = $variables['node']->getType();
+  if (in_array($node_type, $business_types)) {
+    $client = \Drupal::service('business_reviews_client');
+    $request = $client->getProductInfo(2);
+    $variables['average_rating'] = $request['rating']['avg'];
+    $variables['total_reviews'] = $request['numberOfReviews'];
+  }
+
 }
