@@ -3,6 +3,6 @@ styles:
     theme:
       css/styles.css: {}
   js:
-    js/custom.js: {}
+    dist/custom.js: {}
   dependencies:
     - core/jquery
