@@ -45,7 +45,8 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    content.field_layout_width.0 == 'Full Width' ? 'container-fluid' : 'container' 
+    content.field_layout_width.0["#markup"] == 'Full Width' ? 'container-fluid' : 'container' 
+    
   ]
 %}
 
@@ -53,7 +54,6 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-    {{content.field_layout_width.0}}
       {{ content.field_layout_components }}
     {% endblock %}
   </div>
