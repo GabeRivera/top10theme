@@ -44,7 +44,7 @@
         ]
       %}
       <li{{ item.attributes.addClass(classes) }} {% if menu_level < 2 %} data-target="menu-{{menu_level}}" {% endif %}>
-        <a href="{{ item.url }}">{{ item.title }}</a><i class="material-icons">keyboard_arrow_down</i>
+        <a href="{{ item.url }}">{{ item.title }}<i class="material-icons">keyboard_arrow_down</i></a>
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
