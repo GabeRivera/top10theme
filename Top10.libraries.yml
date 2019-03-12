@@ -6,3 +6,6 @@ styles:
     dist/custom.js: {}
   dependencies:
     - core/jquery
+modal: 
+  js:
+    dist/modal.js: {}

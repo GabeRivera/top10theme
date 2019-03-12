@@ -21,8 +21,7 @@
             if (item.classList.contains('hidden')) {
               item.classList.remove('hidden');
             }
-          }
-          else {
+          } else {
             item.classList.add('hidden');
           }
         });
@@ -35,6 +34,6 @@
         tab.addEventListener('click', tabClick);
       });
     }
-    
-  }); 
+
+  });
 }(jQuery));
