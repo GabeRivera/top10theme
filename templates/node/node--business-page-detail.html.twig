@@ -1,12 +1,20 @@
-<div class="business-page-detail">
-  <img src="{{ content.field_business_logo.0["#markup"] }}" class="img-responsive"/>
-  <div class="">
-    <span class="business-page-detail_rank">{{ content.field_business_rank }}</span>
-    <div>
-        <span class="business-page-detail_overall">{{ average_rating }}</span>
-        <span class="rating">******</span>
+<div class="business business-page-detail">
+  <img src="{{ content.field_business_logo.0["#markup"] }}" class="business_img img-responsive"/>
+  <div class="d-flex">
+    <span class="business_rank">{{ content.field_business_rank }}</span>
+    <div class="d-flex">
+        <span class="business_overall">{{ average_rating }}</span>
+        <span class="business_overall-score">overall score</span>
+        <span class="business_rating">******</span>
     </div>
   </div>
-  <div>{{ total_reviews }} User Reviews</div>
-  <button>Write A Review</button>
+  <div class="business_total">
+    <a href="#after-main">
+    {{ total_reviews }} 
+    User Reviews
+    </a>
+  </div>
+
+  <button class="addReviewBtn">Write a Review</button>
+  {{ attach_library('Top10/modal') }}
 </div>

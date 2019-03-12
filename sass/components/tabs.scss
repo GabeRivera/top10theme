@@ -1,0 +1,19 @@
+.tabs {
+    &.content-tabs {
+        ul {
+            width: 100%;
+            justify-content: space-between;
+            li {
+                flex: 1;
+                a {
+                    border: none!important;
+                    width: 100%;
+                    text-align: center;;
+                    &.is-active {
+                        border-bottom:2px solid deepskyblue!important;
+                    }
+                }
+            }
+        }
+    }
+}

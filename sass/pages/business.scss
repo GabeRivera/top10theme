@@ -1,0 +1,14 @@
+body {
+    background: #fff;
+}
+#after-main {
+    .bg-white {
+        justify-content: flex-end;
+        align-content: center;
+        margin-right: 2rem;
+        .addReviewBtn {
+            width: 200px;
+            margin-bottom: 2rem;
+        }
+    }
+}
