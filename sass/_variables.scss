@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 // overrided variables
+$content: 850px !default; //944px
+$sidebar: 320px !default;
+$gutter: 24px !default;
+$drawer: $sidebar !default;
+$navbar: 64px !default;
+$search: 392px !default;
 
-$color-accent-base: $red;
-//$color-primary-base: $blue-gray;
+$color-bg: #FAFAFA !default;

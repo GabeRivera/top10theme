@@ -66,8 +66,6 @@
          {{ node.label }}
         </div>
         <aside id="sidebar-second">
-          {{ node.content.field_business_phone }}
-          {{ node.content.field_business_url }}
         </aside>
       </div>
       
@@ -113,13 +111,21 @@
 
       {% if page.sidebar_first %}
         <aside id="sidebar-first" class="sidebar layout-sidebar-first" role="complementary">
-          {{ page.sidebar_first }}
+          <div class="container">
+            <div class="row">
+              {{ page.sidebar_first }}
+            </div>
+          </div>
         </aside>
       {% endif %}
 
       {% if page.sidebar_second %}
         <aside id="sidebar-second" class="sidebar layout-sidebar-second" role="complementary">
-          {{ page.sidebar_second }}
+          <div class="container">
+            <div class="row">
+              {{ page.sidebar_second }}
+            </div>
+          </div>
         </aside>
       {% endif %}
 
@@ -128,10 +134,9 @@
 
       <div id="after-main">
         {{ page.after_main }}
-        <div class="white-bg">
-            <button>Write A Review</button>
-            {{ bamboo_render_form('business_reviews', 'AddReview') }}
-
+        <div class="bg-white d-flex">
+           <button class="addReviewBtn">Write a Review</button>
+            {{ attach_library('Top10/modal') }}
         </div>
         
         {{ bamboo_render_block('business_reviews_block')}}
@@ -139,7 +144,9 @@
 
 
   </div>{# /.content #}
-
+  <div id="addReviewForm" class="hidden">
+      {{ bamboo_render_form('business_reviews', 'AddReview') }}
+  </div>
   <footer id="footer" role="contentinfo">
     {{ page.footer }}
     <div id="footer-content">

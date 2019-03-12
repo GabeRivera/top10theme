@@ -19,5 +19,10 @@
 
 // put your styles here
 // you can @extend anything from base theme
-@import "./components/dropdown-menu.scss";
+@import "./_variables.scss";
 @import "./util.scss";
+@import "./components/dropdown-menu.scss";
+@import "./components/form-add-review.scss";
+@import "./components/business-cards.scss";
+@import "./pages/business.scss";
+@import "./components/tabs.scss";
