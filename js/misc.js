@@ -124,10 +124,29 @@
       });
   
       // dropdown menus
-      $('.menu-dropdown-toggle').hover(function (e) {
-        $(this).find('.menu-dropdown').first().slideToggle('fast');
+      $('.menu-item').click(function (e) {
         e.stopPropagation();
         e.preventDefault();
+        if ($(this).hasClass('menu-dropdown-toggle')) {
+          if ($(this).closest('.menu-item').hasClass('expanded')) {
+            $(this).find('.menu-dropdown').first().slideToggle('fast');
+          }
+        }
+        else {
+          console.log($(this));
+          window.location = $(this).find('a').attr('href');
+        }      
+      });
+
+      let searchOpen = false;
+      $('.region-navbar form input[type="submit"]').click(function (e) {
+        
+        if (!searchOpen) {
+          e.preventDefault();
+          $(this).closest('form').find('input[type="search"]').addClass('grow');
+          searchOpen = true;
+        } 
+       
       });
   
       $(document).click(function () {

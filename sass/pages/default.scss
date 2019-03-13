@@ -16,40 +16,64 @@ body.stuck {
     }
 }
 
-@media (min-width: 898px) {
-    .two-sidebars #main {
-        display: flex;
-    }
-    #main-content {
-        order: 1!important;
-    }
-    #sidebar-first {
-        order: 0!important;
-    }
-    #sidebar-second {
-        order: 2!important;
-    }
+#header {
+    padding-top: initial;
+    margin-top: initial;
 }
-@media (min-width: 728px) {
-    .two-sidebars #main {
-        display: flex;
-    }
-    #main-content {
-        order: 1!important;
-    }
-    #sidebar-first {
-        order: 0!important;
-    }
-    #sidebar-second {
-        order: 2!important;
-    }
-    .d-flex {
-        #main-content { 
-            order: 1!important;
-            width: 100vw;
-            text-align: center;
-        }
-        #sidebar-first { order: 0!important;}
-        #sidebar-first { order: 2!important;}
-    }
+.header {
+    background: #CCCDCE;
 }
+
+
+// @media (min-width: 728px) {
+//     .two-sidebars #main {
+//         display: flex;
+//     }
+//     #main-content {
+//         order: 1!important;
+//     }
+//     #sidebar-first {
+//         order: 0!important;
+//     }
+//     #sidebar-second {
+//         order: 2!important;
+//     }
+//     .d-flex {
+//         #main-content { 
+//             order: 1!important;
+//             width: 100vw;
+//             text-align: center;
+//         }
+//         #sidebar-first { order: 0!important;}
+//         #sidebar-first { order: 2!important;}
+//     }
+// }
+
+// @media (min-width: 898px) {
+//     .two-sidebars #main {
+//         display: flex;
+//     }
+//     #main-content {
+//         order: 1!important;
+//     }
+//     #sidebar-first {
+//         order: 0!important;
+//     }
+//     #sidebar-second {
+//         order: 2!important;
+//     }
+//     .d-flex {
+//         #main-content { 
+//             order: 1!important;
+//         }
+//         #sidebar-first { order: 0!important;}
+//         #sidebar-second { order: 0!important;}
+//     }
+// }
+
+// @media (min-width: 898px) {
+//     .two-sidebars #main {
+//         display: flex;
+//     }
+
+// }
