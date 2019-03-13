@@ -47,9 +47,10 @@ function Top10_theme_suggestions_page_alter(array &$suggestions, array $variable
 function Top10_preprocess_node(&$variables){
   $business_types = ['home_security'];
   $node_type = $variables['node']->getType();
+  $api_id = $variables['node']->get('field_api_id')->getValue()[0]["value"];
   if (in_array($node_type, $business_types)) {
     $client = \Drupal::service('business_reviews_client');
-    $request = $client->getProductInfo(2);
+    $request = $client->getProductInfo($api_id);
     $variables['average_rating'] = $request['rating']['avg'];
     $variables['total_reviews'] = $request['numberOfReviews'];
   }

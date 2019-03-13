@@ -14,7 +14,7 @@
 
   &_rank {
     clip-path: polygon(0% 99%, 0% 0%, 100% 0%, 100% 100%, 54% 60%, 50% 60%);
-    background-color: lightgreen;
+    background-color: #13DF80;
     width: 95px;
     height: 95px;
     display: inline-flex;
@@ -51,7 +51,7 @@
   &_total {
     text-align: center;
     margin: 1rem 0;
-
+    font-size: 2rem;
   }
 
 
@@ -68,8 +68,8 @@
     }
 
     .rating-star {
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
     }
 
     .business_rank {
@@ -146,7 +146,7 @@
   box-shadow: none;
   border: 0px;
   border-radius: 4px;
-  background: deepskyblue;
+  background: #90CAF8;
   color: #fff;
   font-size: 1rem;
 }

@@ -44,7 +44,7 @@
  */
 #}
 <div id="page" class="layout-container">
-
+  <div id="overlay"></div>
   <div id="navbar">
     {{ page.navbar }}
     <!--
@@ -57,11 +57,15 @@
   <div id="drawer">
     {{ page.drawer }}
   </div>
-  <header id="header" role="banner">
+  <header id="header" role="banner" style="background-image: url({{ file_url(node.field_business_hero.entity.fileuri) }})">
     <div id="header-content">
       {{ page.header }}
     </div>
+    
+    
+    
     <div class="header-second">
+
     <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -72,6 +76,7 @@
                       <h1 class="main-title">{{ node.label }}</h1>
                       </div>
                       <aside id="sidebar-second">
+                      {{ bamboo_render_views('business_page_cocta','business_contact' )}}
                       </aside>
                     </div>
               </div>
@@ -117,21 +122,13 @@
 
       {% if page.sidebar_first %}
         <aside id="sidebar-first" class="sidebar layout-sidebar-first" role="complementary">
-          <div class="container">
-            <div class="row">
-              {{ page.sidebar_first }}
-            </div>
-          </div>
+          {{ page.sidebar_first }}
         </aside>
       {% endif %}
 
       {% if page.sidebar_second %}
         <aside id="sidebar-second" class="sidebar layout-sidebar-second" role="complementary">
-          <div class="container">
-            <div class="row">
-              {{ page.sidebar_second }}
-            </div>
-          </div>
+          {{ page.sidebar_second }}
         </aside>
       {% endif %}
 
@@ -139,10 +136,18 @@
 
 
       <div id="after-main">
+        
         {{ page.after_main }}
         <div class="bg-white d-flex">
-           <button class="addReviewBtn">Write a Review</button>
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <button class="addReviewBtn">Write a Review</button>
             {{ attach_library('Top10/modal') }}
+            </div>
+          </div>
+          </div>
+           
         </div>
         
         {{ bamboo_render_block('business_reviews_block')}}

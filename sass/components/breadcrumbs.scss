@@ -1,0 +1,13 @@
+.breadcrumb {
+    li:after {
+        display: none!important;
+    }
+    li, li:after, a{
+        font-size: 1.3rem;
+        color: #fff;
+        font-weight: lighter;
+    }
+    a,span {
+        margin: 0 1rem;
+    }
+}

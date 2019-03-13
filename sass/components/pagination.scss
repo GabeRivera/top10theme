@@ -1,0 +1,15 @@
+.pager {
+    &-item {
+        border: 1px solid #D0E0ED;
+        span {
+            color: #90CAF8;
+        }
+        &.item-current {
+            background: #90CAF8;
+            span {
+                color: #fff;
+            }
+        }
+    }
+
+}

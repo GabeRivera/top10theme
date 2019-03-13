@@ -1,6 +1,15 @@
 body.stuck {
-    position: fixed;
-    overflow: hidden;
+    position: relative;
+    #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1000!important;
+    }
 }
 .breadcrumb ol li:not(:last-child):after {
     content: "";
@@ -11,69 +20,32 @@ body.stuck {
 }
 .two-sidebars #main {
     justify-content: center;
-    #main-content {
-        max-width: 600px;
-    }
 }
-
+.two-sidebars aside {
+    padding: 5px 10px;
+}
+.main-title {
+    color: #fff!important;
+}
 #header {
     padding-top: initial;
     margin-top: initial;
+    height: 150px;
 }
 .header {
     background: #CCCDCE;
 }
+#navbar .region-navbar {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 50px;
+    @media screen and (max-width: 900px) {
+        font-size: 40px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 35px;
+    }
+}
 
-
-// @media (min-width: 728px) {
-//     .two-sidebars #main {
-//         display: flex;
-//     }
-//     #main-content {
-//         order: 1!important;
-//     }
-//     #sidebar-first {
-//         order: 0!important;
-//     }
-//     #sidebar-second {
-//         order: 2!important;
-//     }
-//     .d-flex {
-//         #main-content { 
-//             order: 1!important;
-//             width: 100vw;
-//             text-align: center;
-//         }
-//         #sidebar-first { order: 0!important;}
-//         #sidebar-first { order: 2!important;}
-//     }
-// }
-
-// @media (min-width: 898px) {
-//     .two-sidebars #main {
-//         display: flex;
-//     }
-//     #main-content {
-//         order: 1!important;
-//     }
-//     #sidebar-first {
-//         order: 0!important;
-//     }
-//     #sidebar-second {
-//         order: 2!important;
-//     }
-//     .d-flex {
-//         #main-content { 
-//             order: 1!important;
-//         }
-//         #sidebar-first { order: 0!important;}
-//         #sidebar-second { order: 0!important;}
-//     }
-// }
-
-// @media (min-width: 898px) {
-//     .two-sidebars #main {
-//         display: flex;
-//     }
-
-// }

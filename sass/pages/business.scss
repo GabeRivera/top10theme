@@ -4,18 +4,57 @@ body {
 
 .business-page-detail {
     position: relative;
-    top: -4rem;
+    top: -5rem;
     z-index: 10;
 }
 
+.business-contact {
+    align-items: center;
+    justify-content: space-between;
+}
+.tel {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.buttn {
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    &-success {
+        background: #13DF80;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+}
+#header {
+    background-size: cover;
+    background-position: center center;
+}
 .page-node-type-home-security {
+    #main-content {
+        max-width: 750px;
+        h1,h2,h3,h4,h5,h5 {
+            color: #000;
+        }
+        p {
+            color: #C6C7C8;
+            font-size: 1rem;
+            line-height: 200%;
+        }
+    }
     #after-main {
-        background: #9A9B9C;
+        background: #FBFBFB;
         .bg-white {
             justify-content: flex-end;
             align-content: center;
             padding-right: 1.5rem;
             margin-bottom: 4rem;
+            .col-md-12 {
+                justify-content: flex-end;
+                display: flex;
+            }
             .addReviewBtn {
                 width: 200px;
                 margin-bottom: 2rem;
