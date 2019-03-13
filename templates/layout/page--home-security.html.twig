@@ -60,18 +60,24 @@
   <header id="header" role="banner">
     <div id="header-content">
       {{ page.header }}
-      <div class="d-flex">
-        <aside id="sidebar-first"></aside>
-        <div id="main-content">
-         {{ node.label }}
-        </div>
-        <aside id="sidebar-second">
-        </aside>
-      </div>
-      
     </div>
-    <div id="header-bg">
-      {{ page.header_bg }}
+    <div class="header-second">
+    <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                    {{ page.breadcrumb }}
+                    <div class="d-flex">
+                      <aside id="sidebar-first"></aside>
+                      <div id="main-content">
+                      <h1 class="main-title">{{ node.label }}</h1>
+                      </div>
+                      <aside id="sidebar-second">
+                      </aside>
+                    </div>
+              </div>
+            </div>
+          </div>
+
     </div>
   </header>
 
@@ -92,7 +98,7 @@
       <div id="main-content" tabindex="-1">{# link is in html.html.twig #}
 
         <div class="card-holder">
-          {{ page.breadcrumb }}
+          
           {{ page.highlighted }}
           {{ page.help }}
 

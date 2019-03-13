@@ -2,14 +2,10 @@
   left: 50%;
   top: 10%; }
 
-div#navbar {
+#navbar .region-navbar {
   display: flex;
-  justify-content: flex-end;
-  background-color: #fff !important; }
-
-.region.region-navbar {
   display: flex;
-  align-items: center; }
+  justify-content: flex-end; }
 
 nav#block-categoriesmenu, form#search-block-form {
   padding: 0 2em; }

@@ -1,14 +1,25 @@
 body {
     background: #fff;
 }
-#after-main {
-    .bg-white {
-        justify-content: flex-end;
-        align-content: center;
-        margin-right: 2rem;
-        .addReviewBtn {
-            width: 200px;
-            margin-bottom: 2rem;
+
+.business-page-detail {
+    position: relative;
+    top: -4rem;
+    z-index: 10;
+}
+
+.page-node-type-home-security {
+    #after-main {
+        background: #9A9B9C;
+        .bg-white {
+            justify-content: flex-end;
+            align-content: center;
+            padding-right: 1.5rem;
+            margin-bottom: 4rem;
+            .addReviewBtn {
+                width: 200px;
+                margin-bottom: 2rem;
+            }
         }
     }
 }

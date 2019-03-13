@@ -4,15 +4,14 @@
         top: 10%;
     }
 }
-div#navbar {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #fff!important;
+#navbar {
+    .region-navbar {
+        display: flex;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
-.region.region-navbar {
-    display: flex;
-    align-items: center;
-}
+
 nav#block-categoriesmenu, form#search-block-form {
     padding: 0 2em;
 }
