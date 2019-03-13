@@ -1,10 +1,27 @@
+{%
+  set ratingNum = average_rating|number_format
+%}
+{%
+  set leftover = 5 - ratingNum
+%}
 <div class="business card card-vertical business-profile"  {{ attributes }}>
   <div class="card-column-left card-column-80">
     <div class="card-item card-title">
       <span class="business_rank">{{ content.field_business_rank }}</span>
       <h3 class="business_overall">{{ average_rating }}</h3>
        <span class="business_overall-score">overall score</span>
-      <span class="business_rating">******</span>
+      <span class="business_rating">
+        {% for i in 1.. ratingNum %}
+            <span class="rating-star rating-star--full">
+              <span class="rating-star rating-star-inner rating-star-inner--full"></span>
+            </span>
+        {% endfor %}
+        {% for i in 1.. leftover %}
+            <span class="rating-star rating-star--empty">
+              <span class="rating-star rating-star-inner rating-star-inner--empty"></span>
+            </span>
+        {% endfor %}
+        </span>
     </div>
     <div class="card-item card-text">
     </div>

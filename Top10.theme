@@ -62,9 +62,3 @@ function Top10_preprocess_node(&$variables){
   }
 
 }
-
-
-$defs = Drupal::service('plugin.manager.field.field_type')->getDefinitions();
-foreach ( $defs as $key => $value ) {
-   echo $key, "\n";
-}
