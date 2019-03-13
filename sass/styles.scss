@@ -21,6 +21,7 @@
 // you can @extend anything from base theme
 @import "./_variables.scss";
 @import "./util.scss";
+@import "./pages/default.scss";
 @import "./components/dropdown-menu.scss";
 @import "./components/form-add-review.scss";
 @import "./components/business-cards.scss";

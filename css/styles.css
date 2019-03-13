@@ -3026,6 +3026,22 @@ ul.messages-list {
 .bg-white {
   background: #fff; }
 
+body.stuck {
+  position: fixed;
+  overflow: hidden; }
+
+.breadcrumb ol li:not(:last-child):after {
+  content: "";
+  font-size: 1.5rem;
+  margin-left: 10px;
+  position: relative;
+  top: 2px; }
+
+.two-sidebars #main {
+  justify-content: center; }
+  .two-sidebars #main #main-content {
+    max-width: 600px; }
+
 .menu-dropdown-submenu {
   left: 50%;
   top: 10%; }
@@ -3060,7 +3076,7 @@ ul#menu-0 i.material-icons, ul#menu-0 i.info:before, ul#menu-0 i.important:befor
 ul#menu-1 i {
   display: none !important; }
 
-.add-review-form {
+#addReviewForm {
   background: #fff;
   width: 100%;
   max-width: 50rem;
@@ -3072,15 +3088,20 @@ ul#menu-1 i {
   bottom: 0px;
   z-index: 1000;
   padding: 3rem; }
-  .add-review-form .form-item {
+  #addReviewForm .form-item {
     border: 2px solid lightgrey;
     border-radius: 1rem;
     position: relative;
     min-height: 2rem; }
-    .add-review-form .form-item label {
+    #addReviewForm .form-item label {
       position: absolute;
       left: 1rem;
       top: .5rem; }
+
+.closeFormBtn {
+  float: right;
+  position: relative;
+  top: -2rem; }
 
 .c-form-title {
   font-size: 2.5rem;
@@ -3092,7 +3113,8 @@ ul#menu-1 i {
   max-width: 85%;
   margin: 0 auto;
   position: relative;
-  top: -5px; }
+  top: -5px;
+  justify-content: center; }
 
 .business_img {
   width: 100%;

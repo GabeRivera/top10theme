@@ -1,0 +1,17 @@
+body.stuck {
+    position: fixed;
+    overflow: hidden;
+}
+.breadcrumb ol li:not(:last-child):after {
+    content: "";
+    font-size: 1.5rem;
+    margin-left:10px;
+    position: relative;
+    top: 2px;
+}
+.two-sidebars #main {
+    justify-content: center;
+    #main-content {
+        max-width: 600px;
+    }
+}
