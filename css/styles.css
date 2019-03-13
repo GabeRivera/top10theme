@@ -3026,22 +3026,6 @@ ul.messages-list {
 .bg-white {
   background: #fff; }
 
-body.stuck {
-  position: fixed;
-  overflow: hidden; }
-
-.breadcrumb ol li:not(:last-child):after {
-  content: "";
-  font-size: 1.5rem;
-  margin-left: 10px;
-  position: relative;
-  top: 2px; }
-
-.two-sidebars #main {
-  justify-content: center; }
-  .two-sidebars #main #main-content {
-    max-width: 600px; }
-
 .menu-dropdown-submenu {
   left: 50%;
   top: 10%; }
@@ -3247,5 +3231,49 @@ body {
       text-align: center; }
       .tabs.content-tabs ul li a.is-active {
         border-bottom: 2px solid deepskyblue !important; }
+
+body.stuck {
+  position: fixed;
+  overflow: hidden; }
+
+.breadcrumb ol li:not(:last-child):after {
+  content: "";
+  font-size: 1.5rem;
+  margin-left: 10px;
+  position: relative;
+  top: 2px; }
+
+.two-sidebars #main {
+  justify-content: center; }
+  .two-sidebars #main #main-content {
+    max-width: 600px; }
+
+@media (min-width: 898px) {
+  .two-sidebars #main {
+    display: flex; }
+  #main-content {
+    order: 1 !important; }
+  #sidebar-first {
+    order: 0 !important; }
+  #sidebar-second {
+    order: 2 !important; } }
+
+@media (min-width: 728px) {
+  .two-sidebars #main {
+    display: flex; }
+  #main-content {
+    order: 1 !important; }
+  #sidebar-first {
+    order: 0 !important; }
+  #sidebar-second {
+    order: 2 !important; }
+  .d-flex #main-content {
+    order: 1 !important;
+    width: 100vw;
+    text-align: center; }
+  .d-flex #sidebar-first {
+    order: 0 !important; }
+  .d-flex #sidebar-first {
+    order: 2 !important; } }
 
 /*# sourceMappingURL=../css/styles.css.map */
