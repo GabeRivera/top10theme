@@ -1,16 +1,24 @@
 .menu-dropdown-submenu {
-  right: 101%;
+  left: 101%;
   top: 0%; }
 
 #navbar {
-  height: auto; }
+  height: auto;
+  padding: 0; }
   #navbar .region-navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
+    #navbar .region-navbar li a {
+      color: #B4B5B6; }
     #navbar .region-navbar > nav > ul {
       list-style-type: none;
-      display: inline-flex; }
+      display: inline-flex;
+      padding-left: 0; }
+      #navbar .region-navbar > nav > ul > li {
+        position: relative;
+        border-left: 1px solid #9A9B9C;
+        border-right: 1px solid #9A9B9C; }
       #navbar .region-navbar > nav > ul > li:first-child {
         width: 150px; }
         #navbar .region-navbar > nav > ul > li:first-child > a {
@@ -18,7 +26,8 @@
           align-items: center;
           justify-content: center; }
       #navbar .region-navbar > nav > ul > li:last-child {
-        width: 150px; }
+        width: 150px;
+        border-left: none; }
         #navbar .region-navbar > nav > ul > li:last-child > a {
           display: flex;
           align-items: center;
@@ -31,5 +40,11 @@
         transition: width 1s; }
         #navbar .region-navbar form input[type="search"].grow {
           width: 160px; }
+      #navbar .region-navbar form input[type="submit"] {
+        background-image: url(../img/lookingglass.png);
+        background-repeat: no-repeat;
+        color: transparent;
+        background-position-x: -3%;
+        width: 100%; }
 
 /*# sourceMappingURL=../../css/components/dropdown-menu.css.map */

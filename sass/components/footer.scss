@@ -1,0 +1,21 @@
+#footer {
+    padding: 4rem 0rem;
+    background-color: #494A4B;
+    p {
+        font-size: .9rem;
+        color: #9E9FA0;
+    }
+    * {
+        color: #fff;
+    }
+    .row:last-child {
+        border-top: 1px solid;
+        padding-top: 1rem;
+        margin-top: 2rem;
+        .col-md-12 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        }
+    }
+}
