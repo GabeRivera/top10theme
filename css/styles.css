@@ -49,6 +49,9 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+.greentext {
+  color: #45DF80; }
+
 /* break points */
 /* mixins and functions */
 /**
@@ -3020,6 +3023,9 @@ ul.messages-list {
   .js-comment mark.hidden {
     display: none; }
 
+.greentext {
+  color: #45DF80; }
+
 .d-flex {
   display: flex; }
 
@@ -3087,14 +3093,13 @@ ul.messages-list {
   z-index: 1000;
   padding: 3rem; }
   #addReviewForm .form-item {
+    position: relative; }
+  #addReviewForm select, #addReviewForm input {
     border: 2px solid lightgrey;
-    border-radius: 1rem;
-    position: relative;
-    min-height: 2rem; }
-    #addReviewForm .form-item label {
-      position: absolute;
-      left: 1rem;
-      top: .5rem; }
+    border-radius: 5px;
+    min-height: 2rem;
+    width: 100%;
+    max-width: initial; }
 
 .closeFormBtn {
   float: right;
@@ -3371,6 +3376,10 @@ h1 {
     h1 {
       font-size: 35px; } }
 
+@media (min-width: 1000px) {
+  .no-sidebars .container {
+    width: 1250px; } }
+
 .pager-item {
   border: 1px solid #D0E0ED; }
   .pager-item span {
@@ -3407,5 +3416,73 @@ h1 {
       display: flex;
       align-items: center;
       justify-content: space-between; }
+
+.layout-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0; }
+
+.hero {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hero h1,
+  .hero .field-name-field-c-hero-text * {
+    color: #fff !important;
+    font-weight: bold;
+    text-align: center; }
+  .hero .field-name-field-c-hero-text * {
+    font-size: 1.4rem;
+    line-height: 200%;
+    margin: 1rem 0; }
+  .hero select {
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    min-height: 2rem;
+    background-color: #fff; }
+  .hero input {
+    position: relative; }
+  .hero form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+  .hero .form-item-field-business-address-administrative-area {
+    margin: 0rem 1rem; }
+  .hero .field-name-field-c-cta-url {
+    text-align: center; }
+  .hero [type="submit"],
+  .hero a {
+    background: #45DF80;
+    color: #fff;
+    top: .5rem;
+    position: relative;
+    border-radius: 5px;
+    width: 9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.3rem; }
+
+.c-section-title {
+  font-size: 2rem;
+  text-align: center; }
+  .c-section-title .field-name-field-c-section-title-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    .c-section-title .field-name-field-c-section-title-title:after, .c-section-title .field-name-field-c-section-title-title:before {
+      content: " ";
+      display: inline-block;
+      height: 2px;
+      width: 20%;
+      background: #ECEEEE; }
+    .c-section-title .field-name-field-c-section-title-title:after {
+      margin-left: 2rem; }
+    .c-section-title .field-name-field-c-section-title-title:before {
+      margin-right: 2rem; }
 
 /*# sourceMappingURL=../css/styles.css.map */

@@ -52,9 +52,11 @@
 
 
 {% block paragraph %}
+<div class="layout-section" style="background-image: url({{ file_url(paragraph.field_background_image.entity.fileuri) }});">
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {{ content.field_layout_components }}
     {% endblock %}
   </div>
+</div>
 {% endblock paragraph %}

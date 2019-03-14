@@ -9,16 +9,13 @@
     top: 0px;
     z-index: 1000;
     padding: 3rem;
-    .form-item {
+    .form-item { position:relative; }
+    select,input {
         border:  2px solid lightgrey;
-        border-radius: 1rem;
-        position:relative;
-        min-height: 2rem;
-        label {
-            position:absolute;
-            left:1rem;
-            top:.5rem;
-        }
+        border-radius: 5px; 
+        min-height: 2rem; 
+        width: 100%;
+        max-width: initial;
     }
 }
 .closeFormBtn {

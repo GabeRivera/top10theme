@@ -40,33 +40,25 @@
 #}
 
 {%
-  set smallSize = content.field_c_card_media_width.0["#markup"]|number_format + 2
-%}
-
-{%
   set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    'col-md-' ~ content.field_c_card_media_width.0["#markup"],
-    'col-sm-' ~ smallSize,
-    'col-xs-12'
   ]
 %}
+
+{%
+  set linkClasses = [
+      
+  ]
+%}
+
 
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="card">
-        <div class="card-item card-media">
-            <a href="#">{{ content.field_c_card_media_image }}</a>
-            <h3 class="title pull-bottom"><a href="#">{{ content.field_c_card_media_title }}</a></h3>
-        </div>
-        <div class="card-item card-text">
-            {{ content.field_c_card_media_text }}
-        </div>
-      </div>
+      {{ content }}
     {% endblock %}
   </div>
 {% endblock paragraph %}
