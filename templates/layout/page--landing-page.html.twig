@@ -58,14 +58,14 @@
     {{ page.drawer }}
   </div>
 
-  <header id="header" role="banner">
+  {# <header id="header" role="banner">
     <div id="header-content">
       {{ page.header }}
     </div>
     <div id="header-bg">
       {{ page.header_bg }}
     </div>
-  </header>
+  </header> #}
 
   {% if page.actions %}
     <div id="actions">
@@ -83,7 +83,7 @@
     <main role="main" id="main">
       <div id="main-content" tabindex="-1">{# link is in html.html.twig #}
 
-        <div class="card-holder">
+        <div>
           {{ page.breadcrumb }}
           {{ page.highlighted }}
           {{ page.help }}
