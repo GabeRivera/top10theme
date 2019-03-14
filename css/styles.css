@@ -463,21 +463,21 @@ pre {
   margin-bottom: 16px;
   display: block; }
 
-@media (min-width: 2047px) {
+@media (min-width: 1242px) {
   .media-left {
-    padding-left: 399px; }
+    padding-left: 394px; }
     .media-left .img-left, .media-left .pull-left, .media-left .align-left {
-      max-width: 375px;
+      max-width: 370px;
       float: left;
-      margin-left: -399px;
+      margin-left: -394px;
       margin-top: 8px;
       margin-bottom: 8px; }
   .media-right {
-    padding-right: 399px; }
+    padding-right: 394px; }
     .media-right .img-right, .media-right .pull-right, .media-right .align-right {
-      max-width: 375px;
+      max-width: 370px;
       float: right;
-      margin-right: -399px;
+      margin-right: -394px;
       margin-top: 8px;
       margin-bottom: 8px; } }
 
@@ -544,7 +544,7 @@ pre {
 .divider-bottom + .divider-top {
   border-top: 0; }
 
-@media (min-width: 838px) {
+@media (min-width: 828px) {
   th:first-child, td:first-child {
     padding-left: 24px; }
   th:last-child, td:last-child {
@@ -584,7 +584,7 @@ pre {
     margin-left: -16px;
     margin-right: -16px;
     border-radius: 0; }
-  @media (min-width: 838px) {
+  @media (min-width: 828px) {
     .card .highlight, .content-card .card-holder .highlight, .card .info, .content-card .card-holder .info, .card .important, .content-card .card-holder .important, .card .messages-status, .content-card .card-holder .messages-status, .card .messages-warning, .content-card .card-holder .messages-warning, .card .messages-error, .content-card .card-holder .messages-error, .content-card .card-holder .highlight, .content-card .card-holder .info, .content-card .card-holder .important, .content-card .card-holder .messages-status, .content-card .card-holder .messages-warning, .content-card .card-holder .messages-error {
       margin-left: -24px;
       margin-right: -24px; } }
@@ -762,7 +762,7 @@ pre {
   .footer-transparent #footer .footer-item {
     pointer-events: auto; }
 
-@media (min-width: 838px) {
+@media (min-width: 828px) {
   #navbar {
     padding: 8px 12px; }
   #footer {
@@ -787,7 +787,7 @@ pre {
 .navbar-gray
 .footer-dark
 */
-@media (min-width: 838px) {
+@media (min-width: 828px) {
   .container {
     padding: 0 24px; }
   .two-sidebars #main {
@@ -805,9 +805,9 @@ pre {
     margin-left: 12px;
     width: calc(50% - 12px); } }
 
-@media (min-width: 1648px) {
+@media (min-width: 848px) {
   .no-sidebars .container {
-    width: 1648px; }
+    width: 848px; }
   .no-sidebars.wide-one-side .container {
     width: auto; }
   .no-sidebars.wide-two-side .container {
@@ -817,35 +817,35 @@ pre {
   .one-sidebar #main-content {
     order: 2;
     flex: 0 0 auto;
-    width: calc(100% - 399px); }
+    width: calc(100% - 394px); }
   .one-sidebar #sidebar-first {
     order: 1;
-    flex: 0 0 375px;
-    width: 375px;
+    flex: 0 0 370px;
+    width: 370px;
     margin-right: 24px; }
   .one-sidebar #sidebar-second {
     order: 3;
-    flex: 0 0 375px;
-    width: 375px;
+    flex: 0 0 370px;
+    width: 370px;
     margin-left: 24px; }
   .two-sidebars #main {
     display: block; }
   .two-sidebars #main-content {
-    width: calc(100% - 399px);
+    width: calc(100% - 394px);
     float: right; }
   .two-sidebars #sidebar-first {
-    width: 375px;
+    width: 370px;
     margin-right: 24px;
     float: left; }
   .two-sidebars #sidebar-second {
-    width: calc(100% - 399px);
+    width: calc(100% - 394px);
     float: right; } }
 
-@media (min-width: 2071px) {
+@media (min-width: 1266px) {
   .no-sidebars.wide-one-side .container {
-    width: 2047px; }
+    width: 1242px; }
   .one-sidebar .container {
-    width: 2047px; }
+    width: 1242px; }
   .one-sidebar.wide-two-side .container {
     width: auto; }
   .two-sidebars #main {
@@ -854,30 +854,30 @@ pre {
   .two-sidebars #main-content {
     order: 2;
     flex: 0 0 auto;
-    width: calc(100% - 798px); }
+    width: calc(100% - 788px); }
   .two-sidebars #sidebar-first {
     order: 1;
-    flex: 0 0 375px;
+    flex: 0 0 370px;
     margin-right: 24px; }
   .two-sidebars #sidebar-second {
     order: 3;
-    flex: 0 0 375px;
-    width: 375px;
+    flex: 0 0 370px;
+    width: 370px;
     margin-left: 24px; } }
 
-@media (min-width: 2470px) {
+@media (min-width: 1660px) {
   .no-sidebars.wide-two-side .container {
-    width: 2446px; }
+    width: 1636px; }
   .one-sidebar.wide-two-side .container {
-    width: 2446px; }
+    width: 1636px; }
   .two-sidebars .container {
-    width: 2446px; } }
+    width: 1636px; } }
 
-@media (min-width: 1648px) {
+@media (min-width: 848px) {
   .drawer-permanent #header, .drawer-permanent #content, .drawer-permanent #navbar, .drawer-permanent #footer {
-    margin-left: 375px; }
+    margin-left: 370px; }
   .drawer-permanent.navbar-fixed #navbar {
-    width: calc(100% - 375px); }
+    width: calc(100% - 370px); }
   .drawer-permanent #drawer {
     margin-left: 0;
     box-shadow: none; }
@@ -895,12 +895,12 @@ pre {
   .drawer-permanent.no-sidebars .container {
     width: auto; } }
 
-@media (min-width: 2071px) {
+@media (min-width: 1266px) {
   .drawer-permanent.no-sidebars .container {
-    width: 1648px; } }
+    width: 848px; } }
 
 .text-box {
-  max-width: 1600px; }
+  max-width: 800px; }
 
 /* buttons */
 .btn-group {
@@ -1467,7 +1467,7 @@ tr.selected:hover {
       font-weight: 500;
       color: rgba(0, 0, 0, 0.54); } }
 
-@media (min-width: 838px) {
+@media (min-width: 828px) {
   .card .table-card, .content-card .card-holder .table-card {
     margin-left: -24px;
     margin-right: -24px;
@@ -1586,7 +1586,7 @@ tr.selected:hover {
   margin-left: -16px;
   margin-right: -16px; }
 
-@media (min-width: 838px) {
+@media (min-width: 828px) {
   .card .form-actions, .content-card .card-holder .form-actions {
     margin-left: -24px;
     margin-right: -24px; } }
@@ -1751,8 +1751,8 @@ icon labels
   top: 0;
   left: 0;
   bottom: 0;
-  width: 375px;
-  margin-left: -399px;
+  width: 370px;
+  margin-left: -394px;
   z-index: 40;
   background: #FAFAFA;
   overflow: auto;
@@ -2711,7 +2711,7 @@ color themes
   .card-bg-accent .rippleAnimate {
     background-color: rgba(0, 0, 0, 0.3); }
 
-@media (min-width: 838px) {
+@media (min-width: 828px) {
   .card-main, .content-card .card-holder {
     padding: 24px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -2881,7 +2881,7 @@ card title and actions overlay for card-bg-image and card-media
   margin: 18px 16px 18px 8px;
   color: rgba(0, 0, 0, 0.54); }
 
-@media (min-width: 838px) {
+@media (min-width: 828px) {
   .card-actions .pager-summary + .pager {
     margin-left: -16px; }
   .card-actions .pager-summary {
@@ -2957,7 +2957,7 @@ ul.messages-list {
 .toolbar-vertical.toolbar-tray-open.drawer-permanent #drawer {
   left: 240px; }
 
-@media (min-width: 1648px) {
+@media (min-width: 848px) {
   .toolbar-vertical.drawer-below-navbar #drawer {
     top: 103px; }
   .toolbar-horizontal.drawer-below-navbar #drawer {
@@ -3359,7 +3359,7 @@ body.stuck {
   background: #CCCDCE; }
 
 #navbar .region-navbar {
-  max-width: 1600px;
+  max-width: 1540px;
   margin: 0 auto; }
 
 h1 {
