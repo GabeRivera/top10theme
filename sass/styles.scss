@@ -25,9 +25,12 @@
 @import "./components/form-add-review.scss";
 @import "./components/business-cards.scss";
 @import "./components/reviews-list.scss";
-@import "./pages/business.scss";
+@import "./components/long-card.scss";
 @import "./components/tabs.scss";
 @import "./pages/default.scss";
+
+@import "./pages/business.scss";
+@import "./pages/taxonomy-term.scss";
 @import "./components/pagination.scss";
 @import "./components/breadcrumbs.scss";
 @import "./components/footer.scss";

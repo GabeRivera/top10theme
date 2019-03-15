@@ -1,0 +1,43 @@
+.taxonomy-listing-page-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    .results-rows {
+        grid-row: 1;
+        grid-column: 2 / 5;
+    }
+    .form-item {
+        position: relative;
+        select {
+            background: #FBFCFD;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 90%;
+            padding-left: 5rem;        
+        }
+        label {
+            position: absolute;
+            z-index: 10;
+            top: .45rem;
+            left: 1rem;
+            font-size: 1rem!important;
+            &:after {
+                content: " : "
+            }
+        }
+    }
+    .form-actions {
+        input {
+            @extend .buttn;
+            @extend .buttn-success;
+        }
+    }
+
+
+    @media screen and (max-width:900px) {
+        .results-rows {
+            grid-row: 2;
+            grid-column: 1 / 5;
+        }
+    }
+}
