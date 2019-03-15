@@ -3165,7 +3165,7 @@ ul.messages-list {
 .business_total {
   text-align: center;
   margin: 1rem 0;
-  font-size: 2rem; }
+  font-size: 1.6rem; }
 
 .business.card, .content-card .business.card-holder {
   margin: 1rem 0; }
@@ -3439,6 +3439,14 @@ body {
       grid-row: 2;
       grid-column: 1 / 5; } }
 
+.categories-header {
+  display: flex;
+  align-items: center; }
+  .categories-header #header-content {
+    width: 100%; }
+  .categories-header .container {
+    margin: 0 auto; }
+
 .pager-item {
   border: 1px solid #D0E0ED; }
   .pager-item span {
@@ -3452,7 +3460,7 @@ body {
   display: none !important; }
 
 .breadcrumb li, .breadcrumb li:after, .breadcrumb a {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #fff;
   font-weight: lighter; }
 
@@ -3552,6 +3560,15 @@ body {
     .c-card-media .card-text i {
       font-size: 4.6rem;
       color: #fff; }
+  .c-card-media--text {
+    padding: 0; }
+    .c-card-media--text .title {
+      color: #000; }
+      .c-card-media--text .title a {
+        color: #000; }
+    .c-card-media--text .card-actions {
+      padding: 1rem 0;
+      border-top: 1px solid #B4B5B6; }
 
 .card-item-cta {
   background: #11DF7F;

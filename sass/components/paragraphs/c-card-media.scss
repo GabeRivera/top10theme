@@ -10,6 +10,17 @@
             color: #fff;
         }
     }
+    &--text {
+        padding: 0;
+        .title {
+            color: #000;
+            a {color: #000;}
+        }
+        .card-actions {
+            padding: 1rem 0;
+            border-top: 1px solid #B4B5B6;
+        }
+    }
 }
 .card-item-cta {
     background: #11DF7F;

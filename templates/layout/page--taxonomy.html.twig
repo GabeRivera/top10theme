@@ -58,13 +58,22 @@
     {{ page.drawer }}
   </div>
 
-  <header id="header" role="banner">
+  <header id="header" role="banner" class="categories-header">
     <div id="header-content">
-      {{ page.header }}
-      {{ dump(page.content) }}
-    </div>
-    <div id="header-bg">
-      {{ page.header_bg }}
+      <div class="container">
+        <div class="row">
+          <div class="col-xm-7 col-sm-3">
+              <h1>{{ bamboo_token('current-page:title') }}</h1>
+          </div>
+          <div class="col-xm-4 col-sm-3">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            {# {{ bamboo_render_block('breadcrumbs') }} #}
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 

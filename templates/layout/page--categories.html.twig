@@ -44,7 +44,7 @@
  */
 #}
 <div id="page" class="layout-container">
-  <div id="overlay"></div>
+
   <div id="navbar">
     {{ page.navbar }}
     <!--
@@ -57,32 +57,16 @@
   <div id="drawer">
     {{ page.drawer }}
   </div>
-  <header id="header" role="banner" style="background-image: url({{ file_url(node.field_business_hero.entity.fileuri) }});">
+
+  <header id="header" role="banner" class="categories-header">
     <div id="header-content">
-      {{ page.header }}
-    </div>
-    
-    
-    
-    <div class="header-second">
-
-    <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                    {{ page.breadcrumb }}
-                    <div class="d-flex" id="main">
-                      <aside id="sidebar-first"></aside>
-                      <div id="main-content">
-                      <h1 class="main-title">{{ node.label }}</h1>
-                      </div>
-                      <aside id="sidebar-second">
-                      {{ bamboo_render_views('business_page_cocta','business_contact' )}}
-                      </aside>
-                    </div>
-              </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+              <h1>Search By Categories</h1>
           </div>
-
+        </div>
+      </div>
     </div>
   </header>
 
@@ -99,11 +83,11 @@
       </div>
     {% endif %}
 
-    <main role="main" id="main">
+    <main role="main" id="main" class="container">
       <div id="main-content" tabindex="-1">{# link is in html.html.twig #}
 
         <div class="card-holder">
-          
+          {{ page.breadcrumb }}
           {{ page.highlighted }}
           {{ page.help }}
 
@@ -134,32 +118,15 @@
 
     </main>{# /#main #}
 
-
+    {% if page.after_main %}
       <div id="after-main">
-        
         {{ page.after_main }}
-        <div class="bg-white d-flex">
-          <div class="">
-            <div class="row">
-            <div class="col-md-12 text-align-right">
-            <button class="addReviewBtn">Write a Review</button>
-            {{ attach_library('Top10/modal') }}
-            </div>
-          </div>
-          </div>
-           
-        </div>
-        
-        {{ bamboo_render_block('business_reviews_block')}}
       </div>
-
+    {% endif %}
 
   </div>{# /.content #}
-  <div id="addReviewForm" class="hidden">
-      <span id="closeFormBtn">X</span>
-      {{ bamboo_render_form('business_reviews', 'AddReview') }}
-  </div>
-  <footer id="footer" role="contentinfo">
+
+ <footer id="footer" role="contentinfo">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
@@ -190,5 +157,6 @@
         </div>
     </div>
   </footer>
+
 
 </div>{# /.layout-container #}
