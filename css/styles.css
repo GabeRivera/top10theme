@@ -3157,8 +3157,7 @@ ul.messages-list {
   font-size: 2rem; }
 
 .business.card, .content-card .business.card-holder {
-  margin: 1rem 0;
-  height: 230px; }
+  margin: 1rem 0; }
   .business.card .business_img, .content-card .business.card-holder .business_img {
     box-shadow: none; }
   .business.card .card-column-left, .content-card .business.card-holder .card-column-left {
