@@ -85,7 +85,7 @@ set link_url = content.field_c_card_media_link.0['#url']
   {% else %}
   <div class="card c-card-media c-card-media--text text-align-center">
     <div class="card-text">
-      <h3 class="title pull-bottom"><a href="{{ link_url }}">{{ content.field_c_card_media_title }}</a></h3>
+      <h3 class="title"><a href="{{ link_url }}">{{ content.field_c_card_media_title }}</a></h3>
 
       {{ content.field_c_card_media_text }}
     </div>

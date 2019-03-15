@@ -3551,6 +3551,17 @@ body {
     .c-section-title .field-name-field-c-section-title-title:before {
       margin-right: 2rem; }
 
+.Photo .c-card-media .pull-bottom {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 2rem; }
+  .Photo .c-card-media .pull-bottom a {
+    color: #fff; }
+
 .c-card-media {
   height: 100%; }
   .c-card-media .card-text {
