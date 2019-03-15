@@ -3127,7 +3127,7 @@ ul.messages-list {
   max-width: 85%;
   margin: 0 auto;
   position: relative;
-  top: -5px;
+  top: -7px;
   justify-content: center; }
 
 .business_img {
@@ -3237,8 +3237,8 @@ ul.messages-list {
   flex-wrap: wrap; }
 
 .long-card.business .rating-star {
-  width: 25px;
-  height: 25px; }
+  width: 24px;
+  height: 24px; }
 
 .long-card .card-item:first-child {
   margin-top: 0; }
@@ -3289,7 +3289,8 @@ ul.messages-list {
   justify-content: space-between;
   width: 100%; }
   .long-card .business_score .business_overall-score {
-    margin: .5rem 0; }
+    margin: .5rem 0;
+    color: #9A9B9C; }
 
 .long-card .field-name-body {
   margin-top: 1rem;
@@ -3343,12 +3344,12 @@ body.stuck {
   padding: 5px 10px; }
 
 .main-title {
-  color: #fff !important; }
+  color: #fff !important;
+  line-height: 1.2; }
 
 #header {
   padding-top: initial;
-  margin-top: initial;
-  height: 150px; }
+  margin-top: initial; }
 
 .header {
   background: #CCCDCE; }
@@ -3375,7 +3376,7 @@ body {
 
 .business-page-detail {
   position: relative;
-  top: -5rem;
+  top: -6rem;
   z-index: 10; }
 
 .business-contact {
@@ -3418,6 +3419,9 @@ body {
   .taxonomy-listing-page-view .results-rows {
     grid-row: 1;
     grid-column: 2 / 5; }
+  .taxonomy-listing-page-view .pager {
+    grid-row: 2;
+    grid-column: 1 / 5; }
   .taxonomy-listing-page-view .form-item {
     position: relative; }
     .taxonomy-listing-page-view .form-item select {
@@ -3438,6 +3442,11 @@ body {
     .taxonomy-listing-page-view .results-rows {
       grid-row: 2;
       grid-column: 1 / 5; } }
+
+.path-search-by-state #header,
+.path-taxonomy #header,
+.page-node-type-page #header {
+  padding: 2rem 0; }
 
 .categories-header {
   display: flex;

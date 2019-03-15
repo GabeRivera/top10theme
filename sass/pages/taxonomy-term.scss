@@ -6,6 +6,10 @@
         grid-row: 1;
         grid-column: 2 / 5;
     }
+    .pager {
+        grid-row: 2;
+        grid-column: 1 / 5;
+    }
     .form-item {
         position: relative;
         select {
@@ -39,5 +43,12 @@
             grid-row: 2;
             grid-column: 1 / 5;
         }
+    }
+}
+.path-search-by-state,
+.path-taxonomy,
+.page-node-type-page {
+    #header {
+        padding: 2rem 0;
     }
 }
