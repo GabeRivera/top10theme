@@ -3252,43 +3252,9 @@ body {
   background-size: cover;
   background-position: center center; }
 
-@media (min-width: 1649px) {
+@media (min-width: 1149px) {
   .page-node-type-home-security #main-content {
-    max-width: 700px; } }
-
-@media (max-width: 1648px) {
-  .page-node-type-home-security #main > div,
-  .page-node-type-home-security #main > aside {
-    float: none !important; }
-  .page-node-type-home-security #main-content {
-    max-width: 700px;
-    float: none;
-    max-width: 700px;
-    margin: 0 auto; }
-  .page-node-type-home-security #sidebar-first {
-    order: 1 !important;
-    flex: 0 0 375px !important;
-    margin-right: 24px !important;
-    width: 375px !important;
-    margin-right: 24px !important;
-    float: left !important; }
-  .page-node-type-home-security #sidebar-second {
-    order: 3 !important;
-    flex: 0 0 375px !important;
-    width: 375px !important;
-    margin-left: 24px !important;
-    float: right; } }
-
-@media (max-width: 838px) {
-  .page-node-type-home-security #main-content {
-    padding: 0px 1rem;
-    order: 1 !important; }
-  .page-node-type-home-security #sidebar-first {
-    order: 0 !important;
-    width: auto; }
-  .page-node-type-home-security #sidebar-second {
-    width: auto;
-    order: 3; } }
+    max-width: 600px; } }
 
 .page-node-type-home-security #main-content h1, .page-node-type-home-security #main-content h2, .page-node-type-home-security #main-content h3, .page-node-type-home-security #main-content h4, .page-node-type-home-security #main-content h5, .page-node-type-home-security #main-content h5 {
   color: #000; }

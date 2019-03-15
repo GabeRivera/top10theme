@@ -33,53 +33,53 @@ body {
     background-position: center center;
 }
 .page-node-type-home-security {
-    @media (min-width: 1649px) {
+    @media (min-width: 1149px) {
         #main-content {
-            max-width: 700px;
+            max-width: 600px;
         } 
     }
-    @media (max-width: 1648px) {
-        #main > div,
-        #main > aside {
-            float: none!important;
-        }
-        #main-content {
-            max-width: 700px;
-            float: none;
-            max-width: 700px;
-            margin: 0 auto;
-        } 
+    // @media (max-width: 1648px) {
+    //     #main > div,
+    //     #main > aside {
+    //         float: none!important;
+    //     }
+    //     #main-content {
+    //         max-width: 700px;
+    //         float: none;
+    //         max-width: 700px;
+    //         margin: 0 auto;
+    //     } 
     
-         #sidebar-first {
-            order: 1!important;
-            flex: 0 0 375px!important;
-            margin-right: 24px!important;
-            width: 375px!important;
-            margin-right: 24px!important;
-            float: left!important;
-        }
-         #sidebar-second {
-            order: 3!important;
-            flex: 0 0 375px!important;
-            width: 375px!important;
-            margin-left: 24px!important;
-            float: right;
-        }
-    }
-    @media (max-width: 838px) {
-        #main-content {
-            padding: 0px 1rem;
-            order: 1!important;
-        } 
-         #sidebar-first {
-            order: 0!important;
-            width: auto;
-        }
-         #sidebar-second {
-            width: auto;
-            order: 3;
-        }
-    }
+    //      #sidebar-first {
+    //         order: 1!important;
+    //         flex: 0 0 375px!important;
+    //         margin-right: 24px!important;
+    //         width: 375px!important;
+    //         margin-right: 24px!important;
+    //         float: left!important;
+    //     }
+    //      #sidebar-second {
+    //         order: 3!important;
+    //         flex: 0 0 375px!important;
+    //         width: 375px!important;
+    //         margin-left: 24px!important;
+    //         float: right;
+    //     }
+    // }
+    // @media (max-width: 838px) {
+    //     #main-content {
+    //         padding: 0px 1rem;
+    //         order: 1!important;
+    //     } 
+    //      #sidebar-first {
+    //         order: 0!important;
+    //         width: auto;
+    //     }
+    //      #sidebar-second {
+    //         width: auto;
+    //         order: 3;
+    //     }
+    // }
     #main-content {
         h1,h2,h3,h4,h5,h5 {
             color: #000;
