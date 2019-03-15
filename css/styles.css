@@ -49,9 +49,6 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
-.greentext {
-  color: #45DF80; }
-
 /* break points */
 /* mixins and functions */
 /**
@@ -3023,14 +3020,17 @@ ul.messages-list {
   .js-comment mark.hidden {
     display: none; }
 
-.greentext {
-  color: #45DF80; }
-
 .d-flex {
   display: flex; }
 
 .bg-white {
   background: #fff; }
+
+.greentext {
+  color: #45DF80; }
+
+.greytext {
+  color: #9FA0A1; }
 
 .menu-dropdown-submenu {
   left: 101%;
@@ -3472,8 +3472,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem; }
+    justify-content: center; }
     .c-section-title .field-name-field-c-section-title-title:after, .c-section-title .field-name-field-c-section-title-title:before {
       content: " ";
       display: inline-block;
@@ -3484,5 +3483,27 @@ h1 {
       margin-left: 2rem; }
     .c-section-title .field-name-field-c-section-title-title:before {
       margin-right: 2rem; }
+
+.c-card-media {
+  height: 100%; }
+  .c-card-media .card-text {
+    align-items: center; }
+    .c-card-media .card-text strong {
+      color: #000; }
+    .c-card-media .card-text i {
+      font-size: 4.6rem;
+      color: #fff; }
+
+.card-item-cta {
+  background: #11DF7F;
+  display: inline-block;
+  max-height: 75px;
+  border-radius: 50%;
+  cursor: pointer; }
+
+.paragraph--type--c-row-title {
+  width: 100%; }
+  .paragraph--type--c-row-title h4 {
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=../css/styles.css.map */

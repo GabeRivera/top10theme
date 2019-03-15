@@ -1,0 +1,20 @@
+.c-card-media {
+    height: 100%;
+    .card-text {
+        align-items: center;
+        strong {
+            color: #000;
+        }
+        i {
+            font-size: 4.6rem;
+            color: #fff;
+        }
+    }
+}
+.card-item-cta {
+    background: #11DF7F;
+    display: inline-block;
+    max-height: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+}
