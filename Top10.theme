@@ -57,3 +57,18 @@ function Top10_preprocess_node(&$variables){
   }
 
 }
+
+function Top10_preprocess_page(&$variables) {
+  $route_match = \Drupal::routeMatch();
+  $route_name = $route_match->getRouteName();
+  if ($route_match->getRouteName() == 'entity.taxonomy_term.canonical') {
+    $term_id = $route_match->getRawParameter('taxonomy_term');
+    $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($term_id);
+    $total_reviews = $term->get('field_number_of_reviews')->value;
+    $bg_img = $term->get('field_taxonomy_image')->entity;
+    $image_uri = $bg_img->url();
+
+    $variables['total_reviews'] = $total_reviews;
+    $variables['bg_img'] = $image_uri;
+  }
+}

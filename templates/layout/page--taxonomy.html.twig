@@ -58,7 +58,7 @@
     {{ page.drawer }}
   </div>
 
-  <header id="header" role="banner" class="categories-header">
+  <header id="header" role="banner" class="categories-header" {% if bg_img %} style="background-image: url({{ bg_img }});" {% endif %}>
     <div id="header-content">
       <div class="container">
         <div class="row">
@@ -66,6 +66,7 @@
               <h1>{{ bamboo_token('current-page:title') }}</h1>
           </div>
           <div class="col-xm-4 col-sm-3">
+            Total Reviews: {{total_reviews}}
           </div>
         </div>
         <div class="row">
