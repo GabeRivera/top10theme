@@ -32,8 +32,8 @@
     }
     .form-actions {
         input {
-            @extend .buttn;
-            @extend .buttn-success;
+            @extend .buttn !optional;
+            @extend .buttn-success !optional;
         }
     }
 

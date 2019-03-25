@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito');
 // overrided variables
 $content: 800px !default; //944px
 $sidebar: 290px !default;
@@ -9,3 +9,5 @@ $navbar: 64px !default;
 $search: 392px !default;
 
 $color-bg: #FAFAFA !default;
+$font-family: 'Lato';
+$heading-font-family: 'Nunito';

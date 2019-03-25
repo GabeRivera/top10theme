@@ -20,7 +20,12 @@
         font-size: 1rem; }
       #navbar .region-navbar #superfish-super-main > li {
         position: relative;
-        border-left: 1px solid rgba(0, 0, 0, 0.6); }
+        border-left: 1px solid rgba(0, 0, 0, 0.6);
+        background-color: #fff; }
+        #navbar .region-navbar #superfish-super-main > li::active, #navbar .region-navbar #superfish-super-main > li::hover {
+          background-color: #fff; }
+        #navbar .region-navbar #superfish-super-main > li a.sf-depth-1.menuparent.sf-with-ul {
+          background-color: #fff !important; }
         #navbar .region-navbar #superfish-super-main > li:last-child {
           border-right: 1px solid rgba(0, 0, 0, 0.6); }
       #navbar .region-navbar #superfish-super-main > li:first-child {

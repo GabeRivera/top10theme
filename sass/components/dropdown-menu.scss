@@ -25,6 +25,13 @@
             >li {
                 position: relative;
                 border-left: 1px solid rgba(0, 0, 0, 0.6);
+                background-color: #fff;
+                &::active, &::hover{
+                    background-color: #fff;
+                }
+                a.sf-depth-1.menuparent.sf-with-ul{
+                    background-color: #fff!important;
+                }
                 &:last-child {
 
                     border-right: 1px solid rgba(0, 0, 0, 0.6);
