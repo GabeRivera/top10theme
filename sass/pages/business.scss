@@ -25,7 +25,88 @@ body {
     @media (min-width: 1149px) {
         #main-content {
             max-width: 600px;
-        } 
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1100x){
+        .header-second {
+            .row {
+                justify-content: center;
+            }
+            #main {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            #sidebar-second {
+                display: none;
+            }
+        }
+        #content {
+            #block-top10-content {
+                padding: 0 1rem;
+            }
+            #main {
+                flex-direction: column;
+                #main-content {
+                    order: 1;
+                }
+                #sidebar-first {
+                    order: 2;
+                    .business-page-detail {
+                        top: auto;
+                        padding-top: 2rem;
+                    }
+                }
+                #sidebar-second {
+                    order: 3;
+                    display: none;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 300px) and (max-width: 767px) {
+        .header-second {
+            #main {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            #sidebar-second {
+                display: none;
+            }
+        }
+        #content {
+            #block-top10-content {
+                padding: 0 1rem;
+            }
+            #main {
+                display: flex;
+                flex-direction: column;
+                #main-content {
+                    order: 1;
+                }
+                #sidebar-first {
+                    order: 0;
+                    .business-page-detail {
+                        top: auto;
+                        padding-top: 2rem;
+                        text-align: center;
+                        img {
+                            max-width: 90%;
+                        }
+                    }
+                    #block-addtoanybuttons {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 2rem;
+                    }
+                }
+                #sidebar-second {
+                    order: 2;
+                    display: none;
+                }
+            }
+        }
     }
     // @media (max-width: 1648px) {
     //     #main > div,
@@ -37,8 +118,8 @@ body {
     //         float: none;
     //         max-width: 700px;
     //         margin: 0 auto;
-    //     } 
-    
+    //     }
+
     //      #sidebar-first {
     //         order: 1!important;
     //         flex: 0 0 375px!important;
@@ -59,7 +140,7 @@ body {
     //     #main-content {
     //         padding: 0px 1rem;
     //         order: 1!important;
-    //     } 
+    //     }
     //      #sidebar-first {
     //         order: 0!important;
     //         width: auto;
