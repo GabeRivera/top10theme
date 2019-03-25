@@ -2,10 +2,15 @@ styles:
   css:
     theme:
       css/styles.css: {}
-  js:
-    dist/custom.js: {}
-  dependencies:
-    - core/jquery
+
 modal: 
   js:
     dist/modal.js: {}
+  dependencies:
+  - core/jquery
+
+tabs: 
+  js:
+    dist/tabs.js: {}
+  dependencies:
+    - core/jquery

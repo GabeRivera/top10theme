@@ -37,6 +37,10 @@ function Top10_theme_suggestions_page_alter(array &$suggestions, array $variable
   }
 }
 
+function Top10_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook) {     
+  var_dump($vars);
+  $suggestions[] = 'taxonomy_term__' . $vars['elements']['#view_mode'];
+}
 /**
 *
 * Process treatment for each node
