@@ -17,7 +17,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             width: 90%;
-            padding-left: 5rem;        
+            padding-left: 5rem;
         }
         label {
             position: absolute;
@@ -32,8 +32,8 @@
     }
     .form-actions {
         input {
-            @extend .buttn;
-            @extend .buttn-success;
+            @extend .buttn !optional;
+            @extend .buttn-success !optional;
         }
     }
 
@@ -50,5 +50,21 @@
 .page-node-type-page {
     #header {
         padding: 2rem 0;
+    }
+}
+.taxonomy-avg-rating {
+    div:first-child {
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+    .business_rating {
+        margin-left: 1rem;
+    }
+    div:last-child {
+        h4 {
+            font-size: .9rem;
+            margin: 0;
+        }
     }
 }

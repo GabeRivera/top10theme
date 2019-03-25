@@ -66,9 +66,21 @@ function Top10_preprocess_page(&$variables) {
     $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($term_id);
     $total_reviews = $term->get('field_number_of_reviews')->value;
     $bg_img = $term->get('field_taxonomy_image')->entity;
-    $image_uri = $bg_img->url();
+    $avg_rating = $term->get('field_avg_rating')->value;
+    $amount_businesses = $term->get('field_total_number_of_')->value;
+    if (isset($bg_img)) {
+      $image_uri = $bg_img->url();
+      $variables['bg_img'] = $image_uri;
+    }
+    if (isset($total_reviews)) {
+      $variables['total_reviews'] = $total_reviews;
+    }
+    if (isset($avg_rating)) {
+      $variables['avg_rating'] = $avg_rating;
+    }
+    if (isset($amount_businesses)) {
+      $variables['amount_businesses'] = $amount_businesses;
+    }
 
-    $variables['total_reviews'] = $total_reviews;
-    $variables['bg_img'] = $image_uri;
   }
 }

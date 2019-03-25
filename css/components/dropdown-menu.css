@@ -11,30 +11,34 @@
     align-items: center; }
     #navbar .region-navbar li a {
       color: #B4B5B6; }
-    #navbar .region-navbar > nav > ul {
+    #navbar .region-navbar #superfish-super-main {
       list-style-type: none;
       display: inline-flex;
       padding-left: 0; }
-      #navbar .region-navbar > nav > ul > li {
+      #navbar .region-navbar #superfish-super-main a {
+        color: #9b9b9b;
+        font-size: 1rem; }
+      #navbar .region-navbar #superfish-super-main > li {
         position: relative;
-        border-left: 1px solid #9A9B9C;
-        border-right: 1px solid #9A9B9C; }
-      #navbar .region-navbar > nav > ul > li:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.6);
+        background-color: #fff; }
+        #navbar .region-navbar #superfish-super-main > li::active, #navbar .region-navbar #superfish-super-main > li::hover {
+          background-color: #fff; }
+        #navbar .region-navbar #superfish-super-main > li a.sf-depth-1.menuparent.sf-with-ul {
+          background-color: #fff !important; }
+        #navbar .region-navbar #superfish-super-main > li:last-child {
+          border-right: 1px solid rgba(0, 0, 0, 0.6); }
+      #navbar .region-navbar #superfish-super-main > li:first-child {
         width: 150px; }
-        #navbar .region-navbar > nav > ul > li:first-child > a {
-          display: flex;
-          align-items: center;
-          justify-content: center; }
-      #navbar .region-navbar > nav > ul > li:last-child {
-        width: 150px;
-        border-left: none; }
-        #navbar .region-navbar > nav > ul > li:last-child > a {
+        #navbar .region-navbar #superfish-super-main > li:first-child > a {
           display: flex;
           align-items: center;
           justify-content: center; }
     #navbar .region-navbar form {
       display: flex;
       align-items: center; }
+      #navbar .region-navbar form .form-item {
+        margin: 0; }
       #navbar .region-navbar form input[type="search"] {
         width: 0px;
         transition: width 1s; }
@@ -46,5 +50,7 @@
         color: transparent;
         background-position-x: -3%;
         width: 100%; }
+        #navbar .region-navbar form input[type="submit"]:hover, #navbar .region-navbar form input[type="submit"]:focus {
+          background-color: transparent; }
 
 /*# sourceMappingURL=../../css/components/dropdown-menu.css.map */
