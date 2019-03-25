@@ -35,6 +35,23 @@
             border-top: 1px solid #B4B5B6;
         }
     }
+
+    &.wide-card {
+        margin-bottom: 2.5rem;
+        .title {
+            text-transform: uppercase;
+            margin: 0;
+        }
+        a { 
+            font-size: 1rem;
+        }
+        .columns {
+            justify-content: space-between;
+            >div {
+                flex: 1;
+            }
+        }
+    }
 }
 .card-item-cta {
     background: #11DF7F;

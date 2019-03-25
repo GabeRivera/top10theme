@@ -3666,6 +3666,17 @@ body {
     .c-card-media--text .card-actions {
       padding: 1rem 0;
       border-top: 1px solid #B4B5B6; }
+  .c-card-media.wide-card {
+    margin-bottom: 2.5rem; }
+    .c-card-media.wide-card .title {
+      text-transform: uppercase;
+      margin: 0; }
+    .c-card-media.wide-card a {
+      font-size: 1rem; }
+    .c-card-media.wide-card .columns {
+      justify-content: space-between; }
+      .c-card-media.wide-card .columns > div {
+        flex: 1; }
 
 .card-item-cta {
   background: #11DF7F;
