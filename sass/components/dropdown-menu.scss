@@ -7,6 +7,7 @@
 #navbar {
     height: auto;
     padding: 0;
+    border-bottom: solid .5px rgba(155, 155, 155, 0.5);
     .region-navbar {
         display: flex;
         justify-content: flex-end;
@@ -15,39 +16,14 @@
             color: #B4B5B6;
         }
        #superfish-super-main {
-            list-style-type: none;
-            display: inline-flex;
-            padding-left: 0;
-            a {
-                color: #9b9b9b;
-                font-size: 1rem;
-            }
-            >li {
-                position: relative;
-                border-left: 1px solid rgba(0, 0, 0, 0.6);
-                background-color: #fff;
-                &::active, &::hover{
-                    background-color: #fff;
-                }
-                a.sf-depth-1.menuparent.sf-with-ul{
-                    background-color: #fff!important;
-                }
+            .sf-depth-1 {
+                border-left: solid .5px rgba(155, 155, 155, 0.5);
                 &:last-child {
-
-                    border-right: 1px solid rgba(0, 0, 0, 0.6);
+                    border-right: solid .5px rgba(155, 155, 155, 0.5);
                 }
-
             }
-            >li:first-child {
-                width: 150px;
-                // &:after {
-                //     display: none;
-                // }
-                >a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;;
-                }
+            ul {
+                background: #fff!important;
             }
         }
         form {
@@ -68,13 +44,49 @@
                 background-repeat: no-repeat;
                 color: transparent;
                 background-position-x: -3%;
-                width: 100%;
+                width: initial;
                 &:hover,
                 &:focus {
                     background-color: transparent;
                 }
             }
         }
+        @media screen and (max-width: 767px){
+            #block-supermain {
+                order: 3;
+                .sf-accordion-toggle {
+                    padding: 0 1rem;
+                    .material-icons { color: rgba(155, 155, 155, 0.5); font-size: 2rem;}
+                }
+                #superfish-super-main-accordion {
+                    &.sf-expanded {
+
+                    }
+                }
+            }
+            #search-block-form {
+                input[type="submit"] {
+                    padding: 0px;
+                    margin: 0px;
+                    min-width: 0px;
+                }
+            }
+        }
     }
 
+}
+
+@media screen and (max-width: 767px){
+    body {
+        &.mobile-menu-open {
+            #block-supermain {
+                position: absolute;
+                top: 0;
+                left: 0px;
+                right: 0;
+                background: #fff;
+                padding: 0 1rem;
+            }
+        }
+    }
 }

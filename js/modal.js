@@ -14,8 +14,5 @@
         }
         btn.addEventListener('click', openModal)
     }
-    
-  
     });
   }(jQuery));
-  

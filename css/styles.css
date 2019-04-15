@@ -3051,36 +3051,20 @@ ul.messages-list {
 
 #navbar {
   height: auto;
-  padding: 0; }
+  padding: 0;
+  border-bottom: solid 0.5px rgba(155, 155, 155, 0.5); }
   #navbar .region-navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
     #navbar .region-navbar li a {
       color: #B4B5B6; }
-    #navbar .region-navbar #superfish-super-main {
-      list-style-type: none;
-      display: inline-flex;
-      padding-left: 0; }
-      #navbar .region-navbar #superfish-super-main a {
-        color: #9b9b9b;
-        font-size: 1rem; }
-      #navbar .region-navbar #superfish-super-main > li {
-        position: relative;
-        border-left: 1px solid rgba(0, 0, 0, 0.6);
-        background-color: #fff; }
-        #navbar .region-navbar #superfish-super-main > li::active, #navbar .region-navbar #superfish-super-main > li::hover {
-          background-color: #fff; }
-        #navbar .region-navbar #superfish-super-main > li a.sf-depth-1.menuparent.sf-with-ul {
-          background-color: #fff !important; }
-        #navbar .region-navbar #superfish-super-main > li:last-child {
-          border-right: 1px solid rgba(0, 0, 0, 0.6); }
-      #navbar .region-navbar #superfish-super-main > li:first-child {
-        width: 150px; }
-        #navbar .region-navbar #superfish-super-main > li:first-child > a {
-          display: flex;
-          align-items: center;
-          justify-content: center; }
+    #navbar .region-navbar #superfish-super-main .sf-depth-1 {
+      border-left: solid 0.5px rgba(155, 155, 155, 0.5); }
+      #navbar .region-navbar #superfish-super-main .sf-depth-1:last-child {
+        border-right: solid 0.5px rgba(155, 155, 155, 0.5); }
+    #navbar .region-navbar #superfish-super-main ul {
+      background: #fff !important; }
     #navbar .region-navbar form {
       display: flex;
       align-items: center; }
@@ -3096,9 +3080,30 @@ ul.messages-list {
         background-repeat: no-repeat;
         color: transparent;
         background-position-x: -3%;
-        width: 100%; }
+        width: initial; }
         #navbar .region-navbar form input[type="submit"]:hover, #navbar .region-navbar form input[type="submit"]:focus {
           background-color: transparent; }
+    @media screen and (max-width: 767px) {
+      #navbar .region-navbar #block-supermain {
+        order: 3; }
+        #navbar .region-navbar #block-supermain .sf-accordion-toggle {
+          padding: 0 1rem; }
+          #navbar .region-navbar #block-supermain .sf-accordion-toggle .material-icons, #navbar .region-navbar #block-supermain .sf-accordion-toggle .breadcrumb ol li:not(:last-child):after, .breadcrumb ol #navbar .region-navbar #block-supermain .sf-accordion-toggle li:not(:last-child):after, #navbar .region-navbar #block-supermain .sf-accordion-toggle .info:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .important:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .messages-status:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .messages-warning:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .messages-error:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .form-item input[type="checkbox"]:before, .form-item #navbar .region-navbar #block-supermain .sf-accordion-toggle input[type="checkbox"]:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .form-item input[type="radio"]:before, .form-item #navbar .region-navbar #block-supermain .sf-accordion-toggle input[type="radio"]:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .form-item.form-type-select:after, #navbar .region-navbar #block-supermain .sf-accordion-toggle .navbar-account-menu .menu a:before, .navbar-account-menu .menu #navbar .region-navbar #block-supermain .sf-accordion-toggle a:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .sidebar .menu .collapsed > a:after, .sidebar .menu #navbar .region-navbar #block-supermain .sf-accordion-toggle .collapsed > a:after, #navbar .region-navbar #block-supermain .sf-accordion-toggle .sidebar .menu .expanded > a:after, .sidebar .menu #navbar .region-navbar #block-supermain .sf-accordion-toggle .expanded > a:after, #navbar .region-navbar #block-supermain .sf-accordion-toggle .collapsible-toggle:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-first > a:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-first > a:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-first > span:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-first > span:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-previous > a:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-previous > a:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-previous > span:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-previous > span:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-ellipsis > a:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-ellipsis > a:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-ellipsis > span:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-ellipsis > span:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-next > a:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-next > a:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-next > span:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-next > span:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-last > a:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-last > a:before, #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager .pager-item.item-last > span:before, .pager #navbar .region-navbar #block-supermain .sf-accordion-toggle .pager-item.item-last > span:before {
+            color: rgba(155, 155, 155, 0.5);
+            font-size: 2rem; }
+      #navbar .region-navbar #search-block-form input[type="submit"] {
+        padding: 0px;
+        margin: 0px;
+        min-width: 0px; } }
+
+@media screen and (max-width: 767px) {
+  body.mobile-menu-open #block-supermain {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0;
+    background: #fff;
+    padding: 0 1rem; } }
 
 #addReviewForm {
   background: #fff;
@@ -3163,7 +3168,8 @@ ul.messages-list {
     justify-content: center; }
 
 .business_overall {
-  font-size: 2rem; }
+  font-size: 2.5em;
+  color: #9b9b9b; }
   .business_overall-score {
     text-transform: uppercase; }
 
@@ -3181,9 +3187,6 @@ ul.messages-list {
     box-shadow: none; }
   .business.card .card-column-left, .content-card .business.card-holder .card-column-left {
     padding: 24px 5px; }
-  .business.card .rating-star, .content-card .business.card-holder .rating-star {
-    width: 15px;
-    height: 15px; }
   .business.card .business_rank, .content-card .business.card-holder .business_rank {
     width: 60px;
     height: 60px; }
@@ -3205,26 +3208,8 @@ ul.messages-list {
       -o-object-fit: cover;
          object-fit: cover; }
 
-.rating-star {
-  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  height: 25px;
-  width: 25px;
-  display: inline-block;
-  position: relative; }
-  .rating-star--empty {
-    background: grey; }
-  .rating-star--full {
-    background: gold; }
-
-.rating-star-inner {
-  position: absolute;
-  top: 1px;
-  left: 1px; }
-  .rating-star-inner--empty {
-    background: #fff; }
-  .rating-star-inner--full {
-    background: gold; }
+.business_rating .material-icons, .business_rating .breadcrumb ol li:not(:last-child):after, .breadcrumb ol .business_rating li:not(:last-child):after, .business_rating .info:before, .business_rating .important:before, .business_rating .messages-status:before, .business_rating .messages-warning:before, .business_rating .messages-error:before, .business_rating .form-item input[type="checkbox"]:before, .form-item .business_rating input[type="checkbox"]:before, .business_rating .form-item input[type="radio"]:before, .form-item .business_rating input[type="radio"]:before, .business_rating .form-item.form-type-select:after, .business_rating .navbar-account-menu .menu a:before, .navbar-account-menu .menu .business_rating a:before, .business_rating .sidebar .menu .collapsed > a:after, .sidebar .menu .business_rating .collapsed > a:after, .business_rating .sidebar .menu .expanded > a:after, .sidebar .menu .business_rating .expanded > a:after, .business_rating .collapsible-toggle:before, .business_rating .pager .pager-item.item-first > a:before, .pager .business_rating .pager-item.item-first > a:before, .business_rating .pager .pager-item.item-first > span:before, .pager .business_rating .pager-item.item-first > span:before, .business_rating .pager .pager-item.item-previous > a:before, .pager .business_rating .pager-item.item-previous > a:before, .business_rating .pager .pager-item.item-previous > span:before, .pager .business_rating .pager-item.item-previous > span:before, .business_rating .pager .pager-item.item-ellipsis > a:before, .pager .business_rating .pager-item.item-ellipsis > a:before, .business_rating .pager .pager-item.item-ellipsis > span:before, .pager .business_rating .pager-item.item-ellipsis > span:before, .business_rating .pager .pager-item.item-next > a:before, .pager .business_rating .pager-item.item-next > a:before, .business_rating .pager .pager-item.item-next > span:before, .pager .business_rating .pager-item.item-next > span:before, .business_rating .pager .pager-item.item-last > a:before, .pager .business_rating .pager-item.item-last > a:before, .business_rating .pager .pager-item.item-last > span:before, .pager .business_rating .pager-item.item-last > span:before {
+  color: gold; }
 
 .addReviewBtn {
   width: 100%;
@@ -3247,6 +3232,20 @@ ul.messages-list {
 .long-card.business .rating-star {
   width: 24px;
   height: 24px; }
+
+.long-card.business .business_overall {
+  color: #9b9b9b;
+  font-size: 3rem; }
+
+.long-card.business .business_rank {
+  height: 96.3px;
+  width: 92.6px;
+  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 50% 77%, 0 100%);
+          clip-path: polygon(0 1%, 100% 0, 100% 100%, 50% 77%, 0 100%); }
+  .long-card.business .business_rank .field-name-field-business-rank {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-top: .4rem; }
 
 .long-card .card-item:first-child {
   margin-top: 0; }

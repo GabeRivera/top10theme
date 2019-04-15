@@ -17,17 +17,17 @@ set business_url = content.field_business_url.0['#url']
         <span class="business_rank">{{ content.field_business_rank }}</span>
         <h3 class="business_overall">{{ average_rating }}</h3>
         <div class="d-flex business_score">
-          <span class="business_overall-score">overall<br/>score</span>
+          <span class="business_overall-score">overall<br />score</span>
           <span class="business_rating">
             {% for i in 1.. ratingNum %}
-            <span class="rating-star rating-star--full">
-              <span class="rating-star rating-star-inner rating-star-inner--full"></span>
-            </span>
+            <i class="material-icons">
+              star
+            </i>
             {% endfor %}
             {% for i in 1.. leftover %}
-            <span class="rating-star rating-star--empty">
-              <span class="rating-star rating-star-inner rating-star-inner--empty"></span>
-            </span>
+            <i class="material-icons">
+              star_border
+            </i>
             {% endfor %}
           </span>
         </div>
@@ -43,7 +43,7 @@ set business_url = content.field_business_url.0['#url']
   <div class="long-card-second-half">
     <h2>{{ label }}</h2>
     <div class="d-flex">
-      <a class="d-flex buttn buttn-success" href="{{ url }}" target="_blank">View Profile</a>
+      <a class="d-flex buttn buttn-success" href="{{ url }}">View Profile</a>
       <a class="d-flex buttn buttn-success" href="{{ business_url }}" target="_blank">Visit Site</a>
     </div>
     {{ content.body }}

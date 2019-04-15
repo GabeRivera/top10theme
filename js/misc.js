@@ -7,7 +7,7 @@
       $('.form-item > *').blur(function () {
         $(this).parent().removeClass('focused');
       });
-  
+
       //header-bg-image navbar-fixed
       var header = $('#header');
       var headerHeight = header.outerHeight();
@@ -15,7 +15,7 @@
       var headerBg = $('.navbar-fixed #header-bg');
       var navbar = $('.navbar-fixed #navbar');
       var headerBgHeight = headerHeight - 192;
-  
+
       $(document).scroll(function (e) {
         var scrollPercent = (headerBgHeight - window.scrollY) / headerBgHeight;
         if (scrollPercent >= 0) {
@@ -34,33 +34,33 @@
           navbar.removeClass('navbar-shadow');
         }
       });
-  
+
       // drawer
       $('#navbar-menu-toggle').click(function (e) {
         $('body').addClass('drawer-open');
         e.stopPropagation();
         e.preventDefault();
       });
-  
+
       $('#drawer-overlay').click(function (e) {
         $('body').removeClass('drawer-open');
       });
-  
+
       $('#drawer-menu-close').click(function (e) {
         $('body').removeClass('drawer-open');
         e.stopPropagation();
         e.preventDefault();
       });
-  
+
       // jquery touch events https://github.com/benmajor/jQuery-Touch-Events
       $('#drawer').swipeleft(function () {
         $('body').removeClass('drawer-open');
       });
-  
+
       $('#drawer-overlay').swipeleft(function () {
         $('body').removeClass('drawer-open');
       });
-  
+
       // smooth scroll for internal links
       var fixedHeight = 24;
       if ($('body').hasClass('navbar-fixed')) {
@@ -75,7 +75,7 @@
           fixedHeight += 40;
         }
       }
-  
+
       $('a[href^="#"]:not([href="#"])').on('click', function (e) {
         e.preventDefault();
         var target = this.hash;
@@ -91,7 +91,7 @@
           }
         });
       });
-  
+
       var pathname = window.location.pathname;
       $('a[href^="' + pathname + '#"]').on('click', function (e) {
         e.preventDefault();
@@ -108,51 +108,42 @@
           }
         });
       });
-  
+
       // collapsible panels
       $('.collapsible-toggle').click(function () {
         var target = '#'.concat($(this).attr('data-target'));
         $(target).slideToggle('fast');
         $(this).toggleClass('expanded');
       });
-  
+
       // tootips
       $('.tooltip').hover(function () {
         $(this).addClass('tooltip-expanded');
       }, function() {
         $(this).removeClass('tooltip-expanded');
       });
-  
+
       // dropdown menus
-      $('.menu-item').click(function (e) {
+      $('#superfish-super-main-toggle').click(function (e) {
+        $('body').toggleClass('mobile-menu-open');
         e.stopPropagation();
         e.preventDefault();
-        if ($(this).hasClass('menu-dropdown-toggle')) {
-          if ($(this).closest('.menu-item').hasClass('expanded')) {
-            $(this).find('.menu-dropdown').first().slideToggle('fast');
-          }
-        }
-        else {
-          console.log($(this));
-          window.location = $(this).find('a').attr('href');
-        }      
       });
 
       let searchOpen = false;
       $('.region-navbar form input[type="submit"]').click(function (e) {
-        
+
         if (!searchOpen) {
           e.preventDefault();
           $(this).closest('form').find('input[type="search"]').addClass('grow');
           searchOpen = true;
-        } 
-       
+        }
+
       });
-  
+
       $(document).click(function () {
         $('.menu-dropdown').slideUp('fast');
       });
-  
+
     });
   }(jQuery));
-  

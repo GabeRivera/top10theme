@@ -5,30 +5,31 @@
   set leftover = 5 - ratingNum
 %}
 <div class="business business-page-detail">
-  <img src="{{ content.field_business_logo.0["#markup"] }}" alt="{{ content.field_business_logo['#items'].alt }}" class="business_img img-responsive"/>
+  <img src="{{ content.field_business_logo.0["#markup"] }}" alt="{{ content.field_business_logo['#items'].alt }}"
+    class="business_img img-responsive" />
   <div class="d-flex">
     <span class="business_rank">{{ content.field_business_rank }}</span>
     <div class="d-flex">
-        <span class="business_overall">{{ ratingNum }}</span>
-        <span class="business_overall-score">overall score</span>
-       <span class="business_rating">
+      <span class="business_overall">{{ ratingNum }}</span>
+      <span class="business_overall-score">overall score</span>
+      <span class="business_rating">
         {% for i in 1.. ratingNum %}
-            <span class="rating-star rating-star--full">
-              <span class="rating-star rating-star-inner rating-star-inner--full"></span>
-            </span>
+        <i class="material-icons">
+          star
+        </i>
         {% endfor %}
         {% for i in 1.. leftover %}
-            <span class="rating-star rating-star--empty">
-              <span class="rating-star rating-star-inner rating-star-inner--empty"></span>
-            </span>
+        <i class="material-icons">
+          star_border
+        </i>
         {% endfor %}
-        </span>
+      </span>
     </div>
   </div>
   <div class="business_total">
     <a href="#after-main">
-    {{ total_reviews }} 
-    User Reviews
+      {{ total_reviews }}
+      User Reviews
     </a>
   </div>
 

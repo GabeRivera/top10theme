@@ -9,6 +9,20 @@
             width: 24px;
             height: 24px;
         }
+        .business_overall {
+            color: #9b9b9b;
+            font-size: 3rem;
+        }
+        .business_rank {
+            height: 96.3px;
+            width: 92.6px;
+            clip-path: polygon(0 1%, 100% 0, 100% 100%, 50% 77%, 0 100%);
+            .field-name-field-business-rank {
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin-top: .4rem;
+            }
+        }
     }
     .card-item {
         &:first-child {
@@ -25,7 +39,7 @@
         }
 
     }
-    
+
     .long-card-first-half,
     .long-card-second-half{
         flex: 1;

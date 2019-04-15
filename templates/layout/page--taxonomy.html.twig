@@ -79,14 +79,14 @@
                 {{ avg_rating }}
                 <span class="business_rating">
                   {% for i in 1.. ratingNum %}
-                  <span class="rating-star rating-star--full">
-                    <span class="rating-star rating-star-inner rating-star-inner--full"></span>
-                  </span>
+                  <i class="material-icons">
+                    star
+                  </i>
                   {% endfor %}
                   {% for i in 1.. leftover %}
-                  <span class="rating-star rating-star--empty">
-                    <span class="rating-star rating-star-inner rating-star-inner--empty"></span>
-                  </span>
+                  <i class="material-icons">
+                    star_border
+                  </i>
                   {% endfor %}
                 </span>
               </div>
@@ -97,7 +97,7 @@
               </div>
             </div>
             <div class="taxonomy-stats">
-            <strong>{{ amount_businesses }}</strong> Companies | {{ total_reviews }} Reviews
+              <strong>{{ amount_businesses }}</strong> Companies | {{ total_reviews }} Reviews
             </div>
           </div>
         </div>
