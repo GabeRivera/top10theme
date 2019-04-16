@@ -10,7 +10,7 @@ set leftover = 5 - ratingNum
 set business_url = content.field_business_url.0['#url']
 %}
 
-<div class="offer" id="3gl5bx">
+<div class="offer" {{ attributes }}>
         <div class="score">
             <div class="score__label"></div>
             <span class="score__num">{{ average_rating }}</span>
@@ -30,7 +30,7 @@ set business_url = content.field_business_url.0['#url']
             </span>
             </span>
             <span class="score__num__reviews">
-                <a href="http://www.10bestsites.org">427 user reviews</a>
+                <a href="{{ url ~ '#after-main'}}">User Reviews</a>
             </span>
         </div>
         <div class="logo">
