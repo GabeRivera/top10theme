@@ -3124,6 +3124,8 @@ ul.messages-list {
     min-height: 2rem;
     width: 100%;
     max-width: initial; }
+  #addReviewForm #edit-rating {
+    color: gold; }
 
 .closeFormBtn {
   float: right;

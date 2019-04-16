@@ -12,16 +12,21 @@
     .form-item { position:relative; }
     select,input {
         border:  2px solid lightgrey;
-        border-radius: 5px; 
-        min-height: 2rem; 
+        border-radius: 5px;
+        min-height: 2rem;
         width: 100%;
         max-width: initial;
+
+    }
+    #edit-rating {
+        color: gold;
     }
 }
 .closeFormBtn {
     float: right;
     position: relative;
     top: -2rem;
+    font-display: 2rem;
 }
 .c-form-title {
     font-size: 2.5rem;
