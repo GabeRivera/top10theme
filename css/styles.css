@@ -3339,8 +3339,13 @@ ul.messages-list {
 .content-tabs-cont {
   padding-top: 3rem; }
 
-.offers .info, .offers .important, .offers .messages-status, .offers .messages-warning, .offers .messages-error {
-  background: initial; }
+.info, .important, .messages-status, .messages-warning, .messages-error {
+  background: initial !important; }
+
+.offer {
+  max-width: none !important;
+  min-height: 0% !important;
+  margin-bottom: 1rem; }
 
 body.stuck {
   position: relative; }

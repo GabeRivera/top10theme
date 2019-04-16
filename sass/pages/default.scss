@@ -1,9 +1,14 @@
 // Ad styling
-.offers {
+
     .info {
-        background: initial;
+        background: initial!important;
     }
-}
+    .offer {
+        max-width: none !important;
+        min-height: 0% !important;
+        margin-bottom: 1rem;
+    }
+
 body.stuck {
     position: relative;
     #overlay {
