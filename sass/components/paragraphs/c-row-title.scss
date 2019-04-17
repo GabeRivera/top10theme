@@ -1,5 +1,8 @@
 .paragraph--type--c-row-title {
     width: 100%;
+    @media screen and (max-width: 767px){
+        margin-left: 1rem;
+    }
     h4 {
         text-transform: uppercase;
     }

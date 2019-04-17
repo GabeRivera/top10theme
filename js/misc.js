@@ -126,6 +126,11 @@
       // dropdown menus
       $('#superfish-super-main-toggle').click(function (e) {
         $('body').toggleClass('mobile-menu-open');
+        if ($('body').hasClass('mobile-menu-open')) {
+          $(this).find('i').html('close');
+        } else {
+          $(this).find('i').html('menu');
+        }
         e.stopPropagation();
         e.preventDefault();
       });

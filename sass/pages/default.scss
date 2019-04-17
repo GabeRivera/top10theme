@@ -2,6 +2,16 @@
 
     .info {
         background: initial!important;
+        &::before {
+            display: none;
+        }
+    }
+    .offers {
+        .info {
+            &::before {
+                display: block;
+            }
+        }
     }
     .offer {
         max-width: none !important;

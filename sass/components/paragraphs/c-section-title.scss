@@ -1,8 +1,9 @@
 .c-section-title {
     font-size: 2rem;
     text-align: center;
+    width: 100%;
     .field-name-field-c-section-title-title {
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -13,6 +14,9 @@
             height: 2px;
             width: 20%;
             background:#ECEEEE;
+            @media screen and (max-width: 717px){
+                display: none;
+            }
         }
         &:after { margin-left: 2rem; }
         &:before { margin-right: 2rem; }

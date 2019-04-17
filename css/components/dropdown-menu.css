@@ -50,12 +50,18 @@
         min-width: 0px; } }
 
 @media screen and (max-width: 767px) {
+  body.mobile-menu-open #search-block-form {
+    display: none; }
   body.mobile-menu-open #block-supermain {
     position: absolute;
     top: 0;
     left: 0px;
     right: 0;
     background: #fff;
-    padding: 0 1rem; } }
+    padding: 0 1rem;
+    height: 100vh; }
+  body.mobile-menu-open .sf-accordion-toggle {
+    float: right;
+    padding-right: 0 !important; } }
 
 /*# sourceMappingURL=../../css/components/dropdown-menu.css.map */

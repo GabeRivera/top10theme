@@ -3,7 +3,7 @@
 @import "breakpoint";
 
 // !!! check path
-// 
+//
 // below template for contrib/custom structure:
 // /themes
 //   /contrib
@@ -31,6 +31,7 @@
 
 @import "./pages/business.scss";
 @import "./pages/taxonomy-term.scss";
+@import "./pages/taxonomies.scss";
 @import "./pages/categories.scss";
 @import "./components/pagination.scss";
 @import "./components/breadcrumbs.scss";

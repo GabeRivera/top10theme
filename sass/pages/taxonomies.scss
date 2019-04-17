@@ -1,0 +1,13 @@
+.taxonomy-categories-card {
+    @media screen and (max-width: 529px){
+        .columns {
+            flex-direction: column;
+        }
+        .card-text,
+        .card-text .title {
+            text-align: center;
+
+        }
+    }
+
+}

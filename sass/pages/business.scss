@@ -22,24 +22,31 @@ body {
     background-size: cover;
     background-position: center center;
 }
-.page-node-type-home-security {
+.page-node-type-home-security.two-sidebars {
     @media (min-width: 1149px) {
         #main-content {
             max-width: 600px;
         }
     }
-    @media screen and (min-width: 768px) and (max-width: 1100x){
-        .header-second {
-            .row {
-                justify-content: center;
+    @media screen and (min-width: 1149px) and (max-width: 1185px){
+        #main {
+            display: flex;
+
+            #main-content {
+                float: none;
+                order: 2!important;
+                flex: 1;
             }
+            #sidebar-first { order: 1!important; }
+            #sidebar-second { order: 3!important;}
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1185px){
+        .header-second {
+
             #main {
-                flex-direction: column;
                 align-items: center;
                 text-align: center;
-            }
-            #sidebar-second {
-                display: none;
             }
         }
         #content {
@@ -47,21 +54,49 @@ body {
                 padding: 0 1rem;
             }
             #main {
-                flex-direction: column;
+                align-items: flex-start;
                 #main-content {
-                    order: 1;
+                    order: 3;
                 }
                 #sidebar-first {
-                    order: 2;
+                    order: 1;
+                    float: none;
                     .business-page-detail {
                         top: auto;
-                        padding-top: 2rem;
+                        padding-top: 1rem;
                     }
                 }
                 #sidebar-second {
-                    order: 3;
-                    display: none;
+                    order: 2;
+                    width: 290px;
+                    float: none;
+                    padding-left: 0px;
                 }
+            }
+        }
+    }
+    @media screen and (min-width: 848px) and (max-width: 1149px){
+        .header-second {
+            #sidebar-second {
+                display: block;
+            }
+        }
+    }
+    @media screen and (min-width: 530px) and (max-width: 1185px){
+        .header-second {
+            #main {
+                display:flex;
+            }
+            #main-content {
+                width: 100%;
+                .main-title {
+                    text-align: left;
+                    margin-left: 1rem;
+                }
+            }
+            #sidebar-first,
+            #sidebar-second {
+                display: none;
             }
         }
     }
@@ -84,10 +119,10 @@ body {
                 display: flex;
                 flex-direction: column;
                 #main-content {
-                    order: 1;
+                    order: 3;
                 }
                 #sidebar-first {
-                    order: 0;
+                    order: 1;
                     .business-page-detail {
                         top: auto;
                         padding-top: 2rem;
