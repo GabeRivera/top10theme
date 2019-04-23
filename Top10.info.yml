@@ -1,4 +1,4 @@
-name: Top10
+name: top10
 type: theme
 description: Top 10 Drupal 8 theme
 core: 8.x
@@ -21,7 +21,7 @@ libraries-override:
   material_base/theme-dark: false
 
 libraries:
-  - Top10/styles
+  - top10/styles
 
 # Regions
 regions:

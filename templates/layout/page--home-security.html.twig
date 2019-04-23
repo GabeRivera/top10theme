@@ -43,7 +43,7 @@
  * @see html.html.twig
  */
 #}
-{{ attach_library('Top10/tabs') }}
+{{ attach_library('top10/tabs') }}
 <div id="page" class="layout-container">
   <div id="overlay"></div>
   <div id="navbar">
@@ -144,7 +144,7 @@
             <div class="row">
             <div class="col-md-12 text-align-right">
             <button class="addReviewBtn">Write a Review</button>
-            {{ attach_library('Top10/modal') }}
+            {{ attach_library('top10/modal') }}
             </div>
           </div>
           </div>
@@ -160,7 +160,7 @@
       <span id="closeFormBtn">X</span>
       {{ bamboo_render_form('business_reviews', 'AddReview') }}
   </div>
- {% include '@Top10/partials/footer.html.twig' %}
+ {% include '@top10/partials/footer.html.twig' %}
 
 
 </div>{# /.layout-container #}
